@@ -1,0 +1,18 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+.header-container .right-side nav ul {
+  display: flex;
+  gap: 40px;
+}
+.header-container .right-side nav ul li a {
+  font-size: 1rem;
+  color: var(--color-c5);
+  font-weight: 500;
+}/*# sourceMappingURL=styles.css.map */

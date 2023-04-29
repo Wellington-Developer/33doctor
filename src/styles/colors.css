@@ -1,0 +1,30 @@
+:root {
+  /*
+    Gray colors
+  */
+  --color-white: #FFFFFF;
+  --color-c1: #7E838C;
+  --color-c2: #636973;
+  --color-c3: #474D59;
+  --color-c4: #363B47;
+  --color-c5: #242833;
+  --color-c6: #0B0C12;
+
+  /*
+    White colors
+  */
+  --color-w1: #F5F7FA;
+  --color-w2: #E6EAF0;
+  --color-w3: #CED3D9;
+  --color-w4: #C0C5CC;
+  --color-w5: #B2B8BF;
+  --color-w6: #989EA6;
+
+  /*
+    Pink colors
+  */
+  --color-p1: #FC5AB1;
+  --color-p2: #D62383;
+  --color-p3: #B50B66;
+  --color-p4: #950050;
+}

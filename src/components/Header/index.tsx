@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className="header-container">
       <div className="left-side">
-        <img src={logo} />
+        <img src={logo} alt="logo image" />
       </div>
       <div className="right-side">
         <nav>

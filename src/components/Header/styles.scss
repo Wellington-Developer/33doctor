@@ -4,6 +4,7 @@
   justify-content: space-between;
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 20px;
   margin-top: 30px;
   
   .right-side {
@@ -11,21 +12,20 @@
       ul {
         display: flex;
         gap: 40px;
-
+        align-items: center;
+        
         li {
-          
-          .button-header {
+          .button-header, a {
             font-size: 1rem;
             color: var(--color-c5);
             font-weight: 500;
             text-transform: capitalize;
             border-radius: 5px;
           }
-
+          
           svg, img {
             margin-left: 8px;
           }
-
         }
       }
     }

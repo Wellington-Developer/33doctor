@@ -1,0 +1,38 @@
+.intro-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 772px) 1fr;
+  max-width: 1262px;
+  padding: 0 20px;
+  align-items: center;
+  height: 80vh;
+  margin: 0 auto;
+
+  .left-side {
+    grid-column: 1/2;
+    max-width: 660px;
+    
+    h1 {
+      font-size: 4rem;
+      line-height: 119%;
+      padding-bottom: 60px;
+      color: var(--color-c6);
+      font-weight: 600;
+
+      span {
+        color: var(--color-p2);
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 500;
+      color: var(--color-c3);
+      padding-bottom: 32px;
+    }
+  }
+
+  .right-side {
+    grid-column: 3/4;
+  }
+}

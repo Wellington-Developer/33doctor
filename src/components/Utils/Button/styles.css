@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border: none;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #CA227D 0%, #A7045C 100%);
+  border-radius: 5px;
+  color: var(--color-w1);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}/*# sourceMappingURL=styles.css.map */

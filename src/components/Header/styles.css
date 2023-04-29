@@ -10,8 +10,9 @@
 .header-container .right-side nav ul {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
-.header-container .right-side nav ul li .button-header {
+.header-container .right-side nav ul li .button-header, .header-container .right-side nav ul li a {
   font-size: 1rem;
   color: var(--color-c5);
   font-weight: 500;

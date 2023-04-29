@@ -33,6 +33,9 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
+              <a href="teste">Consultas</a>
+            </li>
+            <li>
               <Button
                 id="fade-button"
                 className="button-header"

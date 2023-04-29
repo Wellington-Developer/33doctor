@@ -5,13 +5,13 @@ export const Header = () => {
   return (
     <header className="header-container">
       <div className="left-side">
-        <img src={logo} alt="logo image" />
+        <img src={logo} alt="logo" />
       </div>
       <div className="right-side">
         <nav>
           <ul>
-            <li><a href="">Consultas</a></li>
-            <li><a href="">Exames</a></li>
+            <li><a href="#consultas">Consultas</a></li>
+            <li><a href="#exames">Exames</a></li>
           </ul>
         </nav>
       </div>

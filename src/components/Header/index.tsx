@@ -3,7 +3,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './styles.css'
 import logo from '../../assets/logo.png';
 
@@ -34,7 +35,8 @@ export const Header = () => {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
               >
-                Exames
+                <p>Exames</p>
+                { open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
               </Button>
               <Menu
                 id="fade-menu"

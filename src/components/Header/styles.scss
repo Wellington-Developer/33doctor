@@ -15,10 +15,12 @@
 
         li {
 
-          a {
+          .button-header {
             font-size: 1rem;
             color: var(--color-c5);
             font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 5px;
           }
         }
       }

@@ -11,8 +11,10 @@
   display: flex;
   gap: 40px;
 }
-.header-container .right-side nav ul li a {
+.header-container .right-side nav ul li .button-header {
   font-size: 1rem;
   color: var(--color-c5);
   font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 5px;
 }/*# sourceMappingURL=styles.css.map */

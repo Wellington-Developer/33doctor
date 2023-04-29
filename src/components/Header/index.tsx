@@ -48,9 +48,10 @@ export const Header = () => {
                 onClose={handleClose}
                 TransitionComponent={Fade}
               >
-                <MenuItem onClick={handleClose}>Cardiologista</MenuItem>
-                <MenuItem onClick={handleClose}>Clínico Geral</MenuItem>
-                <MenuItem onClick={handleClose}>Dermatologista</MenuItem>
+                <MenuItem onClick={handleClose}>Laboratorial</MenuItem>
+                <MenuItem onClick={handleClose}>Imagem</MenuItem>
+                <MenuItem onClick={handleClose}>Cardiológico</MenuItem>
+                <MenuItem onClick={handleClose}>Oftalmológico</MenuItem>
               </Menu>
             </li>
           </ul>

@@ -1,11 +1,17 @@
 import * as React from 'react';
+
+// Material Icons
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+
+// Styles
 import './styles.css'
+
+// Assets
 import logo from '../../assets/logo.png';
 
 export const Header = () => {

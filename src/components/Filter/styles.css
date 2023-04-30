@@ -26,6 +26,7 @@
   font-weight: 500;
   position: relative;
   padding-bottom: 12px;
+  transition: all 0.3s ease-in-out;
 }
 .filter-container .titles .title a:hover::after {
   content: "";

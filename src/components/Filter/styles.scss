@@ -1,13 +1,25 @@
 .filter-container {
   max-width: 1262px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
   .titles {
     display: flex;
     gap: 24px;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
+    ::after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color:  rgba(0, 0, 0, 0.05);
+    }
+    
     h1 {
       font-size: 1rem;
       color: var(--color-p2);
@@ -34,12 +46,13 @@
         content: '';
         position: absolute;
         display: inline-block;
-        height: 5px;
+        height: 4px;
         width: 100%;
         border-radius: 4px;
         left: 0;
         bottom: 0;
-        background: var(--color-p3);
+        background: var(--color-p2);
+        transition: all 0.3s ease-in-out;
       }
     }
   }
@@ -55,7 +68,11 @@
       gap: 24px;
       flex-direction: column;
       align-items: center;
-  
+
+      ::after {
+        content: '';
+      }
+
       h1 {
         font-size: 1rem;
         color: var(--color-p2);
@@ -91,6 +108,10 @@
       justify-content: start;
       align-items: start;
       overflow: auto;
+
+      ::after {
+        content: '';
+      }
       
       .title {
         gap: 20px;

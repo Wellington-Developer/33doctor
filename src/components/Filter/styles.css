@@ -2,6 +2,8 @@
   max-width: 1262px;
   margin: 0 auto;
   margin-bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
 }
 .filter-container .titles {
   display: flex;
@@ -17,7 +19,7 @@
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #E5E5E5;
 }
 .filter-container .titles h1 {
   font-size: 1rem;
@@ -45,17 +47,77 @@
   display: inline-block;
   height: 4px;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 5px;
   left: 0;
   bottom: 0;
   background: var(--color-p2);
   transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.filter-container .filter {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.filter-container .filter .filter-right {
+  display: flex;
+  gap: 20px;
+}
+.filter-container .filter .filter-right h1 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.filter-container .filter .filter-input {
+  padding-top: 60px;
+  position: relative;
+}
+.filter-container .filter .filter-input input {
+  max-width: 490px;
+  width: 100%;
+  padding: 12px 14px;
+  width: 100%;
+  border: 1px solid var(--color-w3);
+  border-radius: 5px;
+  outline-color: var(--color-w4);
+}
+.filter-container .filter .filter-input input :hover {
+  border: 1px solid var(--color-w4);
+}
+.filter-container .filter .filter-input input ::-moz-placeholder {
+  color: var(--color-w4);
+  font-size: 1rem;
+}
+.filter-container .filter .filter-input input ::placeholder {
+  color: var(--color-w4);
+  font-size: 1rem;
+}
+.filter-container .filter .filter-input .search-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 12px;
+}
+.filter-container .filter .filter-input .search-icon svg {
+  color: var(--color-w3);
 }
 
 @media screen and (max-width: 768px) {
   .filter-container {
     max-width: 1262px;
     margin: 0 auto;
+  }
+  .filter-container .filter {
+    width: 100%;
+  }
+  .filter-container .filter .filter-right {
+    display: none;
+  }
+  .filter-container .filter .filter-input {
+    padding-top: 30px;
+    width: 100%;
+  }
+  .filter-container .filter .filter-input input {
+    max-width: 100%;
+    width: 100%;
   }
   .filter-container .titles {
     display: flex;
@@ -65,6 +127,7 @@
   }
   .filter-container .titles ::after {
     content: "";
+    background-color: transparent;
   }
   .filter-container .titles h1 {
     font-size: 1rem;

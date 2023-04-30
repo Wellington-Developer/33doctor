@@ -71,7 +71,7 @@
   .intro-container {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 120px;
+    padding-top: 60px;
   }
   .intro-container .left-side {
     grid-column: 1/2;

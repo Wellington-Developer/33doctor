@@ -5,8 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export const Filter = () => {
   return (
-    <div data-aos="fade-down">
-      <div className="filter-container">
+    <div data-aos="fade-down" className="filter-container">
+      <div >
         <div className="titles">
           <h1>A partir de R$ xx,xx</h1>
           <div className="title">

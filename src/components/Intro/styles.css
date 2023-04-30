@@ -30,4 +30,99 @@
 }
 .intro-container .right-side {
   grid-column: 3/4;
+}
+.intro-container .right-side img {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    gap: 30px;
+  }
+  .intro-container .left-side {
+    grid-column: 1/2;
+    max-width: 660px;
+  }
+  .intro-container .left-side h1 {
+    font-size: 40px;
+    line-height: 125%;
+    padding-bottom: 36px;
+  }
+  .intro-container .left-side p {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 12px;
+  }
+  .intro-container .right-side {
+    grid-column: 2/4;
+  }
+  .intro-container .right-side img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+  }
+  .intro-container .left-side {
+    grid-column: 1/2;
+    max-width: 660px;
+  }
+  .intro-container .left-side h1 {
+    font-size: 40px;
+    line-height: 125%;
+    padding-bottom: 36px;
+  }
+  .intro-container .left-side p {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 12px;
+  }
+  .intro-container .right-side {
+    grid-column: 1/2;
+  }
+  .intro-container .right-side img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .intro-container .left-side {
+    grid-column: 1/4;
+    max-width: 660px;
+  }
+  .intro-container .left-side h1 {
+    font-size: 40px;
+    line-height: 125%;
+    padding-bottom: 36px;
+  }
+  .intro-container .left-side p {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 12px;
+  }
+  .intro-container .right-side {
+    grid-column: 1/4;
+  }
+  .intro-container .right-side img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=styles.css.map */

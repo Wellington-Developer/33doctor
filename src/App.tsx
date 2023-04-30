@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 // Aos
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { Filter } from './components/Filter';
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <Intro />
+      <Filter />
     </div>
   );
 }

@@ -31,3 +31,17 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    .left-side {
+      img {
+        max-width: 150px;
+      }
+    }
+
+    .right-side {
+      display: none;
+    }
+  }
+}

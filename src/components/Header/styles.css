@@ -21,4 +21,13 @@
 }
 .header-container .right-side nav ul li svg, .header-container .right-side nav ul li img {
   margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container .left-side img {
+    max-width: 150px;
+  }
+  .header-container .right-side {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

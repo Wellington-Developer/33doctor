@@ -56,8 +56,8 @@
 }
 .filter-container .filter {
   display: flex;
-  align-items: end;
   justify-content: space-between;
+  padding-top: 60px;
 }
 .filter-container .filter .filter-right {
   display: flex;
@@ -68,7 +68,6 @@
   font-weight: 400;
 }
 .filter-container .filter .filter-input {
-  padding-top: 60px;
   position: relative;
 }
 .filter-container .filter .filter-input input {

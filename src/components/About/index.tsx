@@ -21,7 +21,7 @@ export const About = () => {
           <h1>Com os melhores profissionais<span>.</span></h1>
           <p>Facilitaremos sua busca para encontrar o profissional, clínica ou laboratório perfeito para os cuidados com a sua saúde, sem precisar se preocupar com o preço.</p>
 
-          <div className="info-about--container">
+          <div className="info-about--container" data-aos="fade-right">
             <div className="box">
               <AdsClickIcon />
               <h1>Pontual</h1>

@@ -1,12 +1,18 @@
+// Styles
 import './App.css';
+
+// Components
 import { Header } from './components/Header';
 import { Intro } from './components/Intro';
+import { About } from './components/About';
+import { Banner } from './components/Banner';
+
+// React Default Components
 import { useEffect } from 'react';
 
 // Aos
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import { About } from './components/About';
 
 function App() {
   useEffect(() => {
@@ -18,6 +24,7 @@ function App() {
       <Header />
       <Intro />
       <About />
+      <Banner />
     </div>
   );
 }

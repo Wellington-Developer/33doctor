@@ -1,0 +1,34 @@
+.banner-container {
+  max-width: 1262px;
+  margin: 120px auto;
+  position: relative;
+  height: 100%;
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px 0;
+    z-index: 1;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 150%;
+      padding-bottom: 2rem;
+      font-weight: 500;
+
+      span {
+        color: var(--color-p2);
+      }
+    }
+  }
+  
+  .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+}

@@ -18,7 +18,7 @@ export const About = () => {
           <img src={aboutImg} alt="about" />
         </div>
         <div className="right-side">
-          <h1>Com os melhores profissionais</h1>
+          <h1>Com os melhores profissionais<span>.</span></h1>
           <p>Facilitaremos sua busca para encontrar o profissional, clínica ou laboratório perfeito para os cuidados com a sua saúde, sem precisar se preocupar com o preço.</p>
 
           <div className="info-about--container">

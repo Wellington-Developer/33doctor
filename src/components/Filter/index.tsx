@@ -1,3 +1,4 @@
+import { BoxFilter } from './BoxFilter/BoxFIlter';
 import './styles.css';
 
 // MUI icons
@@ -33,6 +34,14 @@ export const Filter = () => {
             <h1>Localidade</h1>
           </div>
         </div>
+        
+        <div className="filter-items">
+          <BoxFilter />
+          <BoxFilter />
+          <BoxFilter />
+          <BoxFilter />
+        </div>
+
       </div>
     </div>
     

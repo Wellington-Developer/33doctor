@@ -48,21 +48,12 @@ export const Header = () => {
                 { open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
               </Button>
               <Menu
-                id="fade-menu"
-                MenuListProps={{
-                  'aria-labelledby': 'fade-button',
-                }}
+                id="basic-menu"
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                TransitionComponent={Fade}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
                 }}
               >
                 <MenuItem onClick={handleClose}>Laboratorial</MenuItem>

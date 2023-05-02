@@ -105,3 +105,75 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .testimonial-container {
+    .info-side {
+      h3 {
+        text-align: center;
+        color: var(--color-p2);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+      }
+  
+      h1 {
+        font-size: 1.5rem;
+        line-height: 120%;
+        color: var(--color-c4);
+        position: relative;
+        padding-bottom: 60px;
+        text-align: center;
+      }
+    }
+
+    .testimonial-side {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      
+      .left-side {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+
+        .people-testimonial {
+          display: flex;
+          gap: 20px;
+
+          .people-info-container {
+            display: flex;
+            margin-bottom: 30px;
+            padding: 0;
+            gap: 0;
+            justify-content: center;
+
+            h1 {
+              display: none;
+            }
+    
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .right-side {
+        .comment-testimonial {
+          p {
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+          }
+
+          .quote {
+            top: 50px;
+            right: 50px;
+            max-width: 40px;
+          }
+        }
+      }
+    }
+  }
+}

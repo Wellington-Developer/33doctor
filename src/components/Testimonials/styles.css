@@ -84,4 +84,59 @@
 .testimonial-container .testimonial-side .right-side .comment-testimonial p {
   font-size: 2rem;
   color: var(--color-c3);
+}
+
+@media screen and (max-width: 992px) {
+  .testimonial-container .info-side h3 {
+    text-align: center;
+    color: var(--color-p2);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+  }
+  .testimonial-container .info-side h1 {
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--color-c4);
+    position: relative;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .testimonial-container .testimonial-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .testimonial-container .testimonial-side .left-side {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+  }
+  .testimonial-container .testimonial-side .left-side .people-testimonial {
+    display: flex;
+    gap: 20px;
+  }
+  .testimonial-container .testimonial-side .left-side .people-testimonial .people-info-container {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+  }
+  .testimonial-container .testimonial-side .left-side .people-testimonial .people-info-container h1 {
+    display: none;
+  }
+  .testimonial-container .testimonial-side .left-side .people-testimonial .people-info-container p {
+    display: none;
+  }
+  .testimonial-container .testimonial-side .right-side .comment-testimonial p {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .testimonial-container .testimonial-side .right-side .comment-testimonial .quote {
+    top: 50px;
+    right: 50px;
+    max-width: 40px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 // Aos
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { Testimonials } from './components/Testimonials';
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <Intro />
       <About />
       <Banner />
+      <Testimonials />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 import { Intro } from './components/Intro';
 import { About } from './components/About';
 import { Banner } from './components/Banner';
+import { Filter } from './components/Filter'
 
 // React Default Components
 import { useEffect } from 'react';
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <Header />
       <Intro />
+      <Filter />
       <About />
       <Banner />
       <Testimonials />

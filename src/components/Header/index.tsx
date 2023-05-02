@@ -56,6 +56,14 @@ export const Header = () => {
                 open={open}
                 onClose={handleClose}
                 TransitionComponent={Fade}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
               >
                 <MenuItem onClick={handleClose}>Laboratorial</MenuItem>
                 <MenuItem onClick={handleClose}>Imagem</MenuItem>

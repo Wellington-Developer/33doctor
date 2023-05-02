@@ -56,7 +56,7 @@ export const Testimonials = () => {
               <img src={quoteImg} alt="quote" />
             </div>
             <h1>
-              <img src={starImg} />
+              <img src={starImg} alt="star"/>
               5 estrelas!
             </h1>
               {

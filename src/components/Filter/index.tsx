@@ -1,9 +1,6 @@
 import { BoxFilter } from './BoxFilter/BoxFIlter';
 import './styles.css';
 
-// MUI icons
-import SearchIcon from '@mui/icons-material/Search';
-
 export const Filter = () => {
   return (
     <div className="filter-container">
@@ -24,9 +21,6 @@ export const Filter = () => {
             <input type="text" placeholder="Do que você precisa?">
               
             </input>
-            <div className="search-icon">
-              <SearchIcon />
-            </div>
           </div>
 
           <div className="filter-right">

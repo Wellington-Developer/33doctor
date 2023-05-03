@@ -81,7 +81,6 @@
   max-width: 490px;
   width: 100%;
   padding: 12px 14px;
-  width: 100%;
   border: 1px solid var(--color-w3);
   border-radius: 5px;
   outline-color: var(--color-w4);
@@ -89,21 +88,10 @@
 .filter-container .filter .filter-input input :hover {
   border: 1px solid var(--color-w4);
 }
-.filter-container .filter .filter-input input ::-moz-placeholder {
-  color: var(--color-w4);
-  font-size: 1rem;
-}
-.filter-container .filter .filter-input input ::placeholder {
-  color: var(--color-w4);
-  font-size: 1rem;
-}
-.filter-container .filter .filter-input .search-icon {
-  position: absolute;
-  bottom: 5px;
-  right: 12px;
-}
-.filter-container .filter .filter-input .search-icon svg {
-  color: var(--color-w3);
+.filter-container .filter .filter-input input[type=text],
+.filter-container .filter .filter-input input[type=number],
+.filter-container .filter .filter-input textarea {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1125px) {

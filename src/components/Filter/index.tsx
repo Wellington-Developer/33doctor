@@ -1,7 +1,15 @@
 import { BoxFilter } from './BoxFilter/BoxFIlter';
 import './styles.css';
 
+// Data
+import { data } from '../../data/data';
+import { useState } from 'react';
+
 export const Filter = () => {
+  const [ search, setSearch ] = useState('');
+
+  const filteredData = data.filter((singleData) => singleData.title.toLowerCase().includes(search.toLocaleLowerCase()))
+
   return (
     <div className="filter-container">
       <div >
@@ -18,9 +26,10 @@ export const Filter = () => {
 
         <div className="filter">
           <div className="filter-input">
-            <input type="text" placeholder="Do que você precisa?">
-              
-            </input>
+            <input type="text" placeholder="Do que você precisa?" 
+              onChange={(e) => setSearch(e.target.value)}
+              value={search}
+            />
           </div>
 
           <div className="filter-right">
@@ -30,10 +39,11 @@ export const Filter = () => {
         </div>
         
         <div className="filter-items">
-          <BoxFilter />
-          <BoxFilter />
-          <BoxFilter />
-          <BoxFilter />
+            {
+              filteredData.map((dat, index) => (
+                <BoxFilter title={dat.title} locale={dat.locale} price={dat.price} key={index}/>
+              ))
+            }
         </div>
 
       </div>

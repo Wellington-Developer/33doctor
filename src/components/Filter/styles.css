@@ -7,7 +7,6 @@
   margin: 30px 0;
   display: flex;
   gap: 34px;
-  justify-content: space-between;
 }
 .filter-container .filter-items :hover {
   background: var(--color-w2);

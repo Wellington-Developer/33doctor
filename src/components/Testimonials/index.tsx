@@ -28,7 +28,7 @@ export const Testimonials = () => {
   }, [])
 
   return (
-    <div className="testimonial-container" data-aos="fade-right">
+    <div className="testimonial-container">
       <div className="info-side">
         <h3>Avaliação</h3>
         <h1>5 Estrelas!</h1>

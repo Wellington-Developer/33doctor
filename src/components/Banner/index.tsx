@@ -9,7 +9,7 @@ import './styles.css'
 
 export const Banner = () => {
   return (
-    <div className="banner-container" data-aos="fade-down">
+    <div className="banner-container">
       <div className="shape-container">
         <div className="info">
           <h1>Qual <span>exame ou consulta</span> você quer agendar?</h1>

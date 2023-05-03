@@ -1,9 +1,4 @@
-import * as React from 'react';
-
 // Material Icons
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
@@ -14,15 +9,6 @@ import './styles.css'
 import logo from '../../assets/logo.png';
 
 export const Header = () => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
     <header className="header-container">
       <div className="left-side">
@@ -35,31 +21,10 @@ export const Header = () => {
               <a href="teste">Consultas</a>
             </li>
             <li>
-              <Button
-                id="fade-button"
-                className="button-header"
-                aria-controls={open ? 'fade-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-              >
-                <p>Exames</p>
-                { open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  'aria-labelledby': 'basic-button',
-                }}
-              >
-                <MenuItem onClick={handleClose}>Laboratorial</MenuItem>
-                <MenuItem onClick={handleClose}>Imagem</MenuItem>
-                <MenuItem onClick={handleClose}>Cardiológico</MenuItem>
-                <MenuItem onClick={handleClose}>Oftalmológico</MenuItem>
-              </Menu>
+              <a href="teste">
+                Exames
+                <KeyboardArrowDownIcon />
+              </a>
             </li>
           </ul>
         </nav>

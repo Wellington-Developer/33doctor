@@ -1,3 +1,6 @@
+// Components
+import { Box } from "./Box";
+
 // Framer Motion
 import { motion } from "framer-motion";
 
@@ -35,14 +38,11 @@ export const SlideServices = () => {
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
         >
-          <motion.div className="item"></motion.div>
-          <motion.div className="item"></motion.div>
-          <motion.div className="item"></motion.div>
-          <motion.div className="item"></motion.div>
-          <motion.div className="item"></motion.div>
-          <motion.div className="item"></motion.div>
-          <motion.div className="item"></motion.div>
-          <motion.div className="item"></motion.div>
+          <Box />
+          <Box />
+          <Box />
+          <Box />
+          <Box />
         </motion.div>
       </motion.div>
     </div>

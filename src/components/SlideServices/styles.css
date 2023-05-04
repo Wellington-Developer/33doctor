@@ -1,0 +1,62 @@
+.slide-container {
+  padding: 60px 20px 120px 20px;
+  max-width: 1262px;
+  margin: 0 auto;
+}
+@keyframes seta {
+  from {
+    margin-left: 8px;
+  }
+  to {
+    margin-left: 30px;
+    opacity: 0;
+  }
+}
+.slide-container .drag {
+  font-size: 1.2rem;
+  padding-bottom: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  color: var(--color-c3);
+}
+.slide-container .drag svg {
+  fill: var(--color-p2);
+  animation: seta 0.5s ease-in 0s infinite alternate;
+}
+.slide-container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slide-container .info h3 {
+  color: var(--color-p2);
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 18px;
+}
+.slide-container .info h1 {
+  font-size: 2rem;
+  line-height: 40px;
+  color: var(--color-c4);
+  padding-bottom: 90px;
+}
+.slide-container .carousel {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  cursor: grab;
+}
+.slide-container .carousel .inner {
+  display: flex;
+  height: 100%;
+  gap: 34px;
+}
+.slide-container .carousel .inner .item {
+  min-width: 290px;
+  height: 100%;
+  border: 1px solid red;
+  border-radius: 5px;
+  background: var(--color-p2);
+}/*# sourceMappingURL=styles.css.map */

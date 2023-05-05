@@ -11,6 +11,7 @@ export const ChangedPage = () => {
   return (
     <div className="changed-page--container">
       <div className="banner">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1453&q=80" alt="banner"/>
         <h1>{id?.toUpperCase()}</h1>
       </div>
 

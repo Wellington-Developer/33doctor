@@ -7,11 +7,15 @@ import './styles.css'
 // Assets
 import logo from '../../assets/logo.png';
 
+import { Link } from 'react-router-dom';
+
 export const Header = () => {
   return (
     <header className="header-container">
       <div className="left-side">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="right-side">
         <nav>

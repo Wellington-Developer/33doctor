@@ -1,0 +1,15 @@
+.changed-page--container {
+  max-width: 1262px;
+  margin: 60px auto;
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: var(--color-p1);
+    border-radius: 5px;
+    padding: 0 20px;
+  }
+
+}

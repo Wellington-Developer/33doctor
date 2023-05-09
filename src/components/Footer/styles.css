@@ -1,0 +1,71 @@
+footer {
+  background: var(--color-p3);
+}
+footer .top-side {
+  padding: 120px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--color-p4);
+}
+footer .top-side h1 {
+  text-align: center;
+  max-width: 600px;
+  font-size: 3rem;
+  color: var(--color-w3);
+  padding-bottom: 30px;
+}
+footer .top-side h1 span {
+  color: var(--color-w1);
+}
+footer .top-side button {
+  background: var(--color-w1);
+  color: var(--color-p3);
+}
+footer .top-side button :hover {
+  background: var(--color-w2);
+  color: var(--color-p4);
+}
+footer .bottom-side {
+  max-width: 1262px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .bottom-side .logo {
+  grid-column: 1/2;
+}
+footer .bottom-side .logo h1 {
+  color: var(--color-w1);
+}
+footer .bottom-side .atendimento h1, footer .bottom-side .menu h1 {
+  color: var(--color-w1);
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 24px;
+}
+footer .bottom-side .atendimento li, footer .bottom-side .menu li {
+  color: var(--color-w2);
+  font-size: 1.25rem;
+  padding-bottom: 12px;
+}
+footer .bottom-side .atendimento {
+  grid-column: 2/3;
+}
+footer .bottom-side .menu {
+  grid-column: 3/4;
+}
+footer .info {
+  max-width: 1262px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+footer .info p {
+  color: var(--color-p4);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}/*# sourceMappingURL=styles.css.map */

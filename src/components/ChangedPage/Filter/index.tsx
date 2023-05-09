@@ -4,6 +4,8 @@ import './styles.css';
 // Data
 import { useState } from 'react';
 
+import { Link } from 'react-router-dom';
+
 export const Filter = ({ filteredData }: any) => {
 
   const [ search, setSearch ] = useState('');
@@ -37,13 +39,15 @@ export const Filter = ({ filteredData }: any) => {
           </div>
         </div>
         
-        <div className="filter-items">
-            {
-              filtered.map((item: ResultProps, index: number) => (
-                <BoxFilter title={item.title} locale={item.locale} price={item.price} key={index} />
-              ))
-            }
-        </div>
+          <div className="filter-items">
+              {
+                filtered.map((item: ResultProps, index: number) => (
+                  <Link to={`https://wa.me/556281470582?text=Tenho%20interesse%20em%20um(a)%20${item.title}%20pelo%20preço%20de%20R$%20${item.price}%20em%20${item.locale}`}>
+                    <BoxFilter title={item.title} locale={item.locale} price={item.price} key={index} />
+                  </Link>
+                  ))
+              }
+          </div>
 
       </div>
     </div>

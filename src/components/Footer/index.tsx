@@ -27,10 +27,10 @@ export const Footer = () => {
         <div className="menu">
           <ul>
             <h1>Menu</h1>
+            <li>Seja um franqueado</li>
             <li>Inicio</li>
             <li>Serviço</li>
             <li>Sobre Nós</li>
-            <li>Seja um franqueado</li>
           </ul>
         </div>
       </div>

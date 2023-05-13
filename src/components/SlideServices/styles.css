@@ -52,4 +52,10 @@
   display: flex;
   height: 100%;
   gap: 34px;
+}
+
+@media screen and (max-width: 600px) {
+  .slide-container .info h1 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

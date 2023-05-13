@@ -73,3 +73,26 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .questions-container {
+  grid-template-columns: 300px 1fr;
+
+    .left-side {
+      h1 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .questions-container {
+    grid-template-columns: 1fr;
+    
+    .left-side, .right-side {
+      grid-column: 1;
+    }
+  }
+}

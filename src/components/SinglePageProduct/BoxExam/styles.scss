@@ -1,0 +1,23 @@
+.box-exam {
+  width: 100%;
+  padding: 24px;
+  background: var(--color-w3);
+  border-radius: 5px;
+
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: var(--color-p2);
+    padding-bottom: 30px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}

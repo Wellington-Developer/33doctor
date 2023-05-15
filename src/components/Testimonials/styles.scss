@@ -44,12 +44,13 @@
           margin-bottom: 4px;
           border-radius: 5px;
           cursor: pointer;
+          transition: all 0.3s ease-in;
 
           .people-image {
             width: 52px;
             height: 52px;
             border-radius: 100%;
-            background: var(--color-c1);
+            background: var(--color-p1);
           }
 
           h1 {

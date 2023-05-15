@@ -6,6 +6,12 @@ import './styles.css';
 import quoteImg from '../../assets/quote.svg';
 import starImg from '../../assets/star.svg';
 
+import dralluImg from '../../assets/peoples-testimonial/drallu-burgget.png';
+import carlaImg from '../../assets/peoples-testimonial/carla-natasha.png';
+import maianeImg from '../../assets/peoples-testimonial/maiane-pereira.png';
+import rayaneImg from '../../assets/peoples-testimonial/rayane-brito.png';
+
+
 // Data
 import { testimonialData } from '../../data/testimonial';
 
@@ -13,6 +19,7 @@ import { testimonialData } from '../../data/testimonial';
 import { useState } from 'react';
 
 export const Testimonials = () => {
+  const images = [dralluImg, carlaImg, maianeImg, rayaneImg];
   const [ filteredTestimonial, setFilteredTestimonial ] = useState<Comment>()
 
   const getStateId = (id: number) => {
@@ -31,7 +38,9 @@ export const Testimonials = () => {
               { testimonialData &&
                 testimonialData.map((comment, index) => (
                   <div className="people-info-container" key={index} onMouseEnter={ () => getStateId(index) }>
-                  <div className="people-image"></div>
+                  <div className="people-image">
+                    <img src={images[index]} alt="person"/>
+                  </div>
                     <div className="people-info">
                       <h1>{comment.name}</h1>
                       <p>{comment.description}</p>

@@ -20,7 +20,6 @@ export const Footer = () => {
         <div className="logo">
           <img src={logoImg} alt="logo" />
           <div className="social-media">
-            <p>Disponível também para:</p>
             <div className="images-link">
               <Link to="https://play.google.com/store/search?q=33doctor&c=apps&hl=pt_PT&pli=1">
                 <img src={googlePlayImg} alt="google play"/>

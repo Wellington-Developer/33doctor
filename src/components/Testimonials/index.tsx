@@ -56,6 +56,13 @@ export const Testimonials = () => {
             <div className="quote">
               <img src={quoteImg} alt="quote" />
             </div>
+            {
+              filteredTestimonial ? (
+                <h3 className="mobile-name">{filteredTestimonial?.name}</h3>
+              ) : (
+                <h3 className="mobile-name">Drallu Bourget</h3>
+              )
+            }
             <h1>
               <img src={starImg} alt="star"/>
               5 estrelas!
@@ -67,7 +74,7 @@ export const Testimonials = () => {
                   </p>
                 ) : (
                   <p>
-                    “Atendeu todas minhas expectativas, consegui marcar uma consulta rapidamente sem me preocupar com o preço. Parabéns ao idealizador!”
+                    Atendimento rápido e eficiente. Clinicas e médicos excelentes (utilizei exames cardiológicos, gastros, radiologicos e exame de sangue), não devendo nada para os grandes hospitais de Goiânia.
                   </p>
                 )
               }

@@ -66,6 +66,9 @@
   align-items: center;
   position: relative;
 }
+.testimonial-container .testimonial-side .right-side .mobile-name {
+  display: none;
+}
 .testimonial-container .testimonial-side .right-side .comment-testimonial .quote {
   position: absolute;
   right: 24px;
@@ -130,6 +133,11 @@
   }
   .testimonial-container .testimonial-side .left-side .people-testimonial .people-info-container p {
     display: none;
+  }
+  .testimonial-container .testimonial-side .right-side .mobile-name {
+    display: inline-block;
+    padding-bottom: 12px;
+    font-weight: 500;
   }
   .testimonial-container .testimonial-side .right-side .comment-testimonial p {
     font-size: 1.5rem;

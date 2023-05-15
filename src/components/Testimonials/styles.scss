@@ -78,6 +78,10 @@
       align-items: center;
       position: relative;
 
+      .mobile-name {
+        display: none;
+      }
+
       .comment-testimonial {
 
         .quote {
@@ -162,6 +166,12 @@
       }
 
       .right-side {
+        .mobile-name {
+          display: inline-block;
+          padding-bottom: 12px;
+          font-weight: 500;
+        }
+        
         .comment-testimonial {
           p {
             font-size: 1.5rem;
@@ -173,6 +183,7 @@
             right: 50px;
             max-width: 40px;
           }
+
         }
       }
     }

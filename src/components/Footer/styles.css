@@ -36,21 +36,23 @@ footer .bottom-side .logo {
   grid-column: 1/2;
   transition: all 0.3s ease-in;
 }
+footer .bottom-side .logo .images-link {
+  display: grid;
+  grid-template-columns: 150px 150px;
+}
 footer .bottom-side .logo img {
-  max-width: 250px;
   padding-bottom: 30px;
 }
 footer .bottom-side .logo p {
   color: var(--color-w1);
   padding-bottom: 12px;
 }
-footer .bottom-side .logo svg {
+footer .bottom-side .logo img {
   margin-right: 12px;
   color: var(--color-w1);
   cursor: pointer;
-}
-footer .bottom-side .logo svg :hover {
-  color: var(--color-w3);
+  max-width: 200px;
+  width: 100%;
 }
 footer .bottom-side .atendimento h1, footer .bottom-side .menu h1 {
   color: var(--color-w1);
@@ -89,6 +91,9 @@ footer .info p {
   }
   footer .bottom-side .logo {
     padding-bottom: 60px;
+  }
+  footer .bottom-side .logo .images-link {
+    justify-content: center;
   }
   footer .bottom-side .atendimento, footer .bottom-side .menu {
     padding-bottom: 30px;

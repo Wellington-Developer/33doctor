@@ -3,10 +3,11 @@ import './styles.css'
 
 // Assets
 import logoImg from '../../assets/logo-white.png';
+import googlePlayImg from '../../assets/google-play.png';
+import appleStoreImg from '../../assets/apple-store.png';
 
-// MUI Icons
-import ShopIcon from '@mui/icons-material/Shop';
-import AppleIcon from '@mui/icons-material/Apple';
+// Link
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -20,8 +21,14 @@ export const Footer = () => {
           <img src={logoImg} alt="logo" />
           <div className="social-media">
             <p>Disponível também para:</p>
-            <ShopIcon />
-            <AppleIcon />
+            <div className="images-link">
+              <Link to="https://play.google.com/store/search?q=33doctor&c=apps&hl=pt_PT&pli=1">
+                <img src={googlePlayImg} alt="google play"/>
+              </Link>
+              <Link to="https://play.google.com/store/search?q=33doctor&c=apps&hl=pt_PT&pli=1">
+                <img src={appleStoreImg} alt="apple store"/>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="atendimento">

@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 type servicesProps = {
   title: string,
-  price: number,
+  price?: number,
   link: string,
   image: string
 }
@@ -24,7 +24,11 @@ export const Box = ({ title, price, link, image }: servicesProps) => {
         (
           <div className="box-active">
             <h1>{title}</h1>
-            <h3>A partir de <span>R$ {price}</span></h3>
+            {
+              price ? (
+                <h3>A partir de <span>R$ {price},00</span></h3>
+              ) : <h3>-</h3>
+            }
             <Button link={link} />
           </div>
         )

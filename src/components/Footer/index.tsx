@@ -2,6 +2,11 @@ import { Button } from '../Utils/Button'
 import './styles.css'
 
 // Assets
+import logoImg from '../../assets/logo-white.png';
+
+// MUI Icons
+import ShopIcon from '@mui/icons-material/Shop';
+import AppleIcon from '@mui/icons-material/Apple';
 
 export const Footer = () => {
   return (
@@ -12,7 +17,12 @@ export const Footer = () => {
       </div>
       <div className="bottom-side">
         <div className="logo">
-          <h1>33doctor</h1>
+          <img src={logoImg} alt="logo" />
+          <div className="social-media">
+            <p>Disponível também para:</p>
+            <ShopIcon />
+            <AppleIcon />
+          </div>
         </div>
         <div className="atendimento">
           <ul>

@@ -34,9 +34,23 @@ footer .bottom-side {
 }
 footer .bottom-side .logo {
   grid-column: 1/2;
+  transition: all 0.3s ease-in;
 }
-footer .bottom-side .logo h1 {
+footer .bottom-side .logo img {
+  max-width: 250px;
+  padding-bottom: 30px;
+}
+footer .bottom-side .logo p {
   color: var(--color-w1);
+  padding-bottom: 12px;
+}
+footer .bottom-side .logo svg {
+  margin-right: 12px;
+  color: var(--color-w1);
+  cursor: pointer;
+}
+footer .bottom-side .logo svg :hover {
+  color: var(--color-w3);
 }
 footer .bottom-side .atendimento h1, footer .bottom-side .menu h1 {
   color: var(--color-w1);
@@ -62,9 +76,9 @@ footer .info {
   padding: 60px 20px;
 }
 footer .info p {
-  color: var(--color-p4);
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  color: var(--color-w1);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 @media screen and (max-width: 1200px) {

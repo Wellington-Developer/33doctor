@@ -4,45 +4,37 @@ import './styles.css';
 
 // Assets
 import quoteImg from '../../assets/quote.svg';
-import starImg from '../../assets/star.svg'
+import starImg from '../../assets/star.svg';
 
-// Reac Components
-import { useEffect, useState } from 'react';
+// Data
+import { testimonialData } from '../../data/testimonial';
+
+// Hooks
+import { useState } from 'react';
 
 export const Testimonials = () => {
-  const [ comments, setComments ] = useState<Comment[]>();
   const [ filteredTestimonial, setFilteredTestimonial ] = useState<Comment>()
 
-  const fetchData = async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/comments?id=1&id=32&id=3&id=4');
-    const data = await response.json()
-    setComments(data);
-  }
-
   const getStateId = (id: number) => {
-    comments && setFilteredTestimonial(comments[id]);
+    testimonialData && setFilteredTestimonial(testimonialData[id]);
   }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
 
   return (
     <div className="testimonial-container">
       <div className="info-side">
         <h3>Avaliação</h3>
-        <h1>5 Estrelas!</h1>
+        <h1>O que estão falando sobre nós?</h1>
       </div>
       <div className="testimonial-side">
         <div className="left-side">
           <div className="people-testimonial">
-              { comments &&
-                comments.map((comment, index) => (
+              { testimonialData &&
+                testimonialData.map((comment, index) => (
                   <div className="people-info-container" key={index} onMouseEnter={ () => getStateId(index) }>
                   <div className="people-image"></div>
                     <div className="people-info">
-                      <h1>Maria Condado</h1>
-                      <p>{comment.email}</p>
+                      <h1>{comment.name}</h1>
+                      <p>{comment.description}</p>
                     </div>
                   </div>
                 ))

@@ -7,8 +7,9 @@
   margin: 0 auto;
 
   .left-side {
+    gap: 30px;
     grid-column: 1/2;
-    max-width: 660px;
+    max-width: 730px;
     
     h1 {
       font-size: 4rem;
@@ -28,6 +29,7 @@
       font-weight: 500;
       color: var(--color-c3);
       padding-bottom: 32px;
+      max-width: 570px;
     }
   }
 

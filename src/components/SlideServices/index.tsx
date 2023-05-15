@@ -35,8 +35,8 @@ export const SlideServices = () => {
   return (
     <div className="slide-container">
       <div className="info">
-        <h3>Titulo qualquer</h3>
-        <h1>Nossos serviços</h1>
+        <h3>Agendamento</h3>
+        <h1>Qual exame ou consulta você quer agendar?</h1>
       </div>
 
       <motion.h1 className="drag">

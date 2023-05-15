@@ -38,9 +38,26 @@ footer {
 
     .logo {
       grid-column: 1/2;
+      transition: all 0.3s ease-in;
+      
+      img {
+        max-width: 250px;
+        padding-bottom: 30px;
+      }
 
-      h1 {
+      p {
         color: var(--color-w1);
+        padding-bottom: 12px;
+      }
+
+      svg {
+        margin-right: 12px;
+        color: var(--color-w1);
+        cursor: pointer;
+
+        :hover {
+          color: var(--color-w3);
+        }
       }
     }
 
@@ -75,9 +92,9 @@ footer {
     padding: 60px 20px;
 
     p {
-      color: var(--color-p4);
-      font-size: 1.25rem;
-      line-height: 1.75rem;
+      color: var(--color-w1);
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
 }

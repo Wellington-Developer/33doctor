@@ -1,5 +1,5 @@
 // Assets
-import aboutImg from '../../assets/intro.png';
+import aboutImg from '../../assets/precisou-consultou.png';
 
 // Styles
 import './styles.css';

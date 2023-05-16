@@ -19,11 +19,39 @@
         gap: 40px;
         align-items: center;
   
+        li {
+          position: relative;
+        }
+
         li a {
           display: flex;
           align-items: center;
           color: var(--color-c3);
           font-weight: 500;
+        }
+
+        .menu {
+          position: absolute;
+          right: 0;
+          top: 40px;
+          border-radius: 5px;
+          background: var(--color-w1);
+          display: none;
+          transition: all 0.3s ease-in;
+
+          a {
+            padding: 0 12px;
+            border-radius: 4px;
+          }
+
+          :hover {
+            background: var(--color-p2);
+            color: var(--color-w1);
+          }
+        }
+
+        #active {
+          display: inline-block;
         }
       }
     }
@@ -79,6 +107,11 @@
             padding: 6px 12px;
             border-radius: 4px;
             background: var(--color-p4);
+          }
+
+          .menu {
+            background: var(--color-p4);
+            margin: 0 auto;
           }
         }
 

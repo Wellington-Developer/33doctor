@@ -1,5 +1,6 @@
 // Material Icons
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -14,10 +15,14 @@ import { useState } from 'react';
 
 export const Header = () => {
   const [modalActive, setModalActive] = useState(true);
+  const [menuActive, setMenuActive] = useState(true);
+
+  const handleMenuActive = () => {
+    setMenuActive(!menuActive)
+  }
 
   const handleActiveModal = () => {
     setModalActive(!modalActive)
-    console.log(modalActive)
   }
 
   return (
@@ -39,10 +44,19 @@ export const Header = () => {
               <a href="teste">Consultas</a>
             </li>
             <li>
-              <a href="teste">
+              <a href="#click" onClick={handleMenuActive}>
                 Exames
-                <KeyboardArrowDownIcon />
+                {
+                  menuActive ?
+                  <KeyboardArrowDownIcon /> :
+                  <KeyboardArrowUpIcon />
+                }
               </a>
+              <div className="menu" id={menuActive ? "" : "active"} >
+                <a href="#test">Oftalmologico</a>
+                <a href="#test">Cardiologico</a>
+                <a href="#test">Imagem</a>
+              </div>
             </li>
           </ul>
         </nav>

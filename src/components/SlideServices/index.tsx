@@ -17,15 +17,24 @@ import ArrowRightAltOutlinedIcon from '@mui/icons-material/ArrowRightAltOutlined
 // Data
 import { services } from "../../data/services";
 
+// Assets
+import doctorMaleImg from '../../assets/icons/doctor_male.svg';
+import heartCardiogramImg from '../../assets/icons/heart_cardiogram.svg';
+import microscopeImg from '../../assets/icons/microscope.svg';
+import opthalmologyImg from '../../assets/icons/opthalmology.svg';
+import hospitalizedImg from '../../assets/icons/hospitalized.svg';
+import tac from '../../assets/icons/tac.svg';
+
 export const SlideServices = () => {
   const carousel = useRef<null | HTMLDivElement>(null);
   const [ width, setWidth ] = useState(0)
+
+  const images = [ tac, microscopeImg, doctorMaleImg, heartCardiogramImg, opthalmologyImg, hospitalizedImg ]
 
   type servicesProps = {
     title: string,
     price: number,
     link: string,
-    image: string
   }
 
   useEffect(() => {
@@ -52,7 +61,7 @@ export const SlideServices = () => {
         >
           {
             services.map((item: servicesProps, index: number) => (
-              <Box title={item.title} price={item.price} link={item.link} key={index}/>
+              <Box title={item.title} price={item.price} link={item.link} key={index} image={images[index]}/>
             ))
           }
         </motion.div>

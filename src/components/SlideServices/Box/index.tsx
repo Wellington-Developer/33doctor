@@ -6,15 +6,17 @@ type servicesProps = {
   title: string,
   price?: number,
   link: string,
+  image: HTMLElement | SVGElement | any,
 }
 
-export const Box = ({ title, price, link }: servicesProps) => {
+export const Box = ({ title, price, link, image }: servicesProps) => {
 
 
   return (
     <div className="item">
       <div className="box-info">
         <div className="info-card">
+          <img src={image} alt="icons about each exam"/>
           <h1>{title}</h1>
         </div>
         <div className="price">

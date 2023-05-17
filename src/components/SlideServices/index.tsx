@@ -39,10 +39,11 @@ export const SlideServices = () => {
         <h1>Qual exame ou consulta você quer agendar?</h1>
       </div>
 
-      <motion.h1 className="drag">
+      <h1 className="drag">
         Arraste para o lado
         <ArrowRightAltOutlinedIcon />
-      </motion.h1>
+      </h1>
+
       <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
         <motion.div 
           className="inner"
@@ -51,7 +52,7 @@ export const SlideServices = () => {
         >
           {
             services.map((item: servicesProps, index: number) => (
-              <Box title={item.title} price={item.price} link={item.link} image={item.image} key={index}/>
+              <Box title={item.title} price={item.price} link={item.link} key={index}/>
             ))
           }
         </motion.div>

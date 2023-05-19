@@ -12,7 +12,7 @@ import WavesIcon from '@mui/icons-material/Waves';
 
 export const About = () => {
   return (
-    <div className="bg-container">
+    <div className="bg-container" id="about">
       <div className="about-container">
         <div className="left-side">
           <img src={aboutImg} alt="about" />

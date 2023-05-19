@@ -64,9 +64,38 @@
 
 @media screen and (max-width: 600px) {
   .slide-container {
+    .drag {
+      display: none;
+    }
+
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: auto;
+
+      .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+      }
+    }
+
+
     .info {
       h1 {
         text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .slide-container {
+    .carousel {
+      .inner {
+        grid-template-columns: 1fr;
       }
     }
   }

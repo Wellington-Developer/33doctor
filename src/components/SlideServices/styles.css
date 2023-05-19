@@ -55,7 +55,27 @@
 }
 
 @media screen and (max-width: 600px) {
+  .slide-container .drag {
+    display: none;
+  }
+  .slide-container .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .slide-container .carousel .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
   .slide-container .info h1 {
     text-align: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  .slide-container .carousel .inner {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */

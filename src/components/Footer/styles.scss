@@ -134,6 +134,23 @@ footer {
 
 @media screen and (max-width: 800px) {
   footer {
+    .top-side {
+      h1 {
+        font-size: 2rem;
+        font-weight: normal;
+      }
+  
+      button {
+        background: var(--color-w1);
+        color: var(--color-p3);
+  
+        :hover {
+          background: var(--color-w2);
+          color: var(--color-p4);
+        }
+      }
+    }
+
     .bottom-side {
       grid-template-columns: 1fr;
       align-items: center;

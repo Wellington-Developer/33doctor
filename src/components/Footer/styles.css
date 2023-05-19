@@ -106,6 +106,18 @@ footer .info p {
   }
 }
 @media screen and (max-width: 800px) {
+  footer .top-side h1 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  footer .top-side button {
+    background: var(--color-w1);
+    color: var(--color-p3);
+  }
+  footer .top-side button :hover {
+    background: var(--color-w2);
+    color: var(--color-p4);
+  }
   footer .bottom-side {
     grid-template-columns: 1fr;
     align-items: center;

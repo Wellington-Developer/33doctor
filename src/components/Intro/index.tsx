@@ -6,8 +6,8 @@ export const Intro = () => {
   return (
     <div className="intro-container">
       <div className="left-side">
-        <h1>Agendar seus <span>exames ou consultas</span> em Campinas é simples!</h1>
-        <p>Obtenha os cuidados de saúde que você precisa com valores mais acessíveis na rede particular em Campinas mais próxima a você.</p>
+        <h1>Agendar seus exames e consultas é super simples!</h1>
+        <p>❤️ Obtenha os cuidados de saúde que você precisa com <span>valores mais acessíveis</span> na <span>rede particular em Goiânia</span> mais próxima a você.</p>
         <Button />
       </div>
 

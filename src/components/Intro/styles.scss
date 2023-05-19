@@ -1,6 +1,6 @@
 .intro-container {
   display: grid;
-  grid-template-columns: minmax(300px, 772px) 1fr;
+  grid-template-columns: repeat(300px, 1fr);
   max-width: 1262px;
   padding: 120px 20px;
   align-items: center;
@@ -9,14 +9,14 @@
   .left-side {
     gap: 30px;
     grid-column: 1/2;
-    max-width: 730px;
+    max-width: 670px;
     
     h1 {
       font-size: 4rem;
       line-height: 119%;
+      color: var(--color-c4);
+      font-weight: 800;
       padding-bottom: 60px;
-      color: var(--color-c6);
-      font-weight: 600;
 
       span {
         color: var(--color-p2);
@@ -26,10 +26,14 @@
     p {
       font-size: 20px;
       line-height: 120%;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--color-c3);
-      padding-bottom: 32px;
-      max-width: 570px;
+      max-width: 500px;
+      padding-bottom: 60px;
+
+      span {
+        font-weight: 800;
+      }
     }
   }
 

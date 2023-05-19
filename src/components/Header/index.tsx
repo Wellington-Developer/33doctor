@@ -41,10 +41,13 @@ export const Header = () => {
           <ul className={modalActive ? '' : 'active'}>
             <CloseIcon onClick={ handleActiveModal } className={modalActive ? 'hidden' : 'showed'}/>
             <li>
+              <a href="teste">Como funciona</a>
+            </li>
+            <li>
               <a href="teste">Consultas</a>
             </li>
             <li>
-              <a href="#click" onClick={handleMenuActive}>
+              <a href="#click" onClick={handleMenuActive} id="icon">
                 Exames
                 {
                   menuActive ?

@@ -6,6 +6,9 @@
   padding: 10px 20px;
   max-width: 1262px;
 }
+.header-container .left-side {
+  max-width: 250px;
+}
 .header-container .right-side .hidden {
   display: none;
   color: var(--color-w4);
@@ -23,6 +26,9 @@
   align-items: center;
   color: var(--color-c3);
   font-weight: 500;
+}
+.header-container .right-side nav ul #icon img, .header-container .right-side nav ul #icon svg {
+  color: var(--color-p2);
 }
 .header-container .right-side nav ul .menu {
   position: absolute;

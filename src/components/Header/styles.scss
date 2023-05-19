@@ -5,6 +5,10 @@
   margin: 0 auto;
   padding: 10px 20px;
   max-width: 1262px;
+
+  .left-side {
+    max-width: 250px;
+  }
   
   .right-side {
 
@@ -28,6 +32,12 @@
           align-items: center;
           color: var(--color-c3);
           font-weight: 500;
+        }
+
+        #icon {
+          img, svg {
+            color: var(--color-p2)
+          }
         }
 
         .menu {

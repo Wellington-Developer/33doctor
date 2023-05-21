@@ -33,6 +33,7 @@ export const SlideServices = () => {
 
   type servicesProps = {
     title: string,
+    type: string,
     price: number,
     link: string,
   }
@@ -44,8 +45,8 @@ export const SlideServices = () => {
   return (
     <div className="slide-container">
       <div className="info">
-        <h3>Agendamento</h3>
-        <h1>Qual exame ou consulta você quer agendar?</h1>
+        <h3>Agendamento rapido e facil</h3>
+        <h1>Qual exame ou consulta você quer agendar hoje?</h1>
       </div>
 
       <h1 className="drag">
@@ -60,8 +61,9 @@ export const SlideServices = () => {
           dragConstraints={{ right: 0, left: -width }}
         >
           {
+            services &&
             services.map((item: servicesProps, index: number) => (
-              <Box title={item.title} price={item.price} link={item.link} key={index} image={images[index]}/>
+              <Box title={item.title} type={item.type} price={item.price} link={item.link} key={index} image={images[index]}/>
             ))
           }
         </motion.div>

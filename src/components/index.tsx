@@ -8,13 +8,13 @@ import { Testimonials } from "./Testimonials"
 
 export const Home = () => {
   return (
-    <>
+    <div id="home">
       <Intro />
       <SlideServices />
       <About/>
       <Testimonials />
       <Banner />
       <CommonQuestions />
-    </>
+    </div>
   )
 }

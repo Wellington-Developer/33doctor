@@ -29,24 +29,70 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
+
+          <h1>Endereço tal</h1>
+          <h1>contato@contato</h1>
+
+          <p>© Todos os direitos reservados 33 Doctor | 2023</p>
         </div>
-        <div className="atendimento">
+
+        <div className="exames-buscados">
           <ul>
-            <h1>Atendimento</h1>
-            <li>Segunda-feira das 07h00 às 17h00</li>
-            <li>Terça-feira das 07h00 às 17h00</li>
-            <li>Quarta-feira das 07h00 às 17h00</li>
-            <li>Quinta-feira das 07h00 às 17h00</li>
-            <li>Sexta-feira das 07h00 às 16h00</li>
+            <h1>Exames mais buscados</h1>
+            <li>
+              <Link to="pages/laboratorial">Laboratoriais</Link>
+            </li>
+            <li>
+              <Link to="pages/imagem">Imagem</Link>
+            </li>
+            <li>
+              <Link to="pages/cardiologico">Cardiológico</Link>
+            </li>
+            <li>
+              <Link to="pages/oftalmologico">Oftalmológico</Link>
+            </li>
+            <h3>
+              <Link to="pages/exame">Ver todos</Link>
+            </h3>
           </ul>
         </div>
-        <div className="menu">
+
+        <div className="consultas-buscadas">
           <ul>
-            <h1>Menu</h1>
+            <h1>Consultas mais buscadas</h1>
+            <li>
+              <Link to="pages/consulta" key="1">
+                Cardiológico  
+              </Link>
+            </li>
+            <li>
+              <Link to="pages/consulta" key="2">
+                Oftalmológico  
+              </Link>
+            </li>
+            <h3>
+              <Link to="pages/consulta" key="3">
+                Ver todos
+              </Link>
+            </h3>
+          </ul>
+        </div>
+
+        <div className="saiba-mais">
+          <ul>
+            <h1>Saiba mais</h1>
             <li>Seja um franqueado</li>
-            <li>Inicio</li>
-            <li>Serviço</li>
-            <li>Sobre Nós</li>
+            <li>
+              <a href="/#home">Inicio</a>
+            </li>
+            <li>
+              <a href="/#services">Serviço</a>
+            </li>
+            <li>Sobre a 33 Doctor</li>
+            <li>Politica de privacidade</li>
+            <li>
+              <a href="/#about">Como funciona</a>
+            </li>
           </ul>
         </div>
       </div>

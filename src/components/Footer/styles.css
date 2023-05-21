@@ -8,29 +8,32 @@ footer .top-side {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid var(--color-p4);
+  background: var(--color-w1);
 }
 footer .top-side h1 {
   text-align: center;
   max-width: 600px;
   font-size: 3rem;
-  color: var(--color-w1);
+  color: var(--color-c4);
   padding-bottom: 30px;
-}
-footer .top-side button {
-  background: var(--color-w1);
-  color: var(--color-p3);
-}
-footer .top-side button :hover {
-  background: var(--color-w2);
-  color: var(--color-p4);
 }
 footer .bottom-side {
   max-width: 1262px;
   padding: 120px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+footer .bottom-side h1 {
+  color: var(--color-w2);
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+footer .bottom-side p {
+  padding-top: 30px;
+  max-width: 250px;
 }
 footer .bottom-side .logo {
   grid-column: 1/2;
@@ -54,16 +57,23 @@ footer .bottom-side .logo img {
   max-width: 200px;
   width: 100%;
 }
-footer .bottom-side .atendimento h1, footer .bottom-side .menu h1 {
+footer .bottom-side .exames-buscados h1, footer .bottom-side .consultas-buscadas h1, footer .bottom-side .saiba-mais h1 {
   color: var(--color-w1);
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
   padding-bottom: 24px;
 }
-footer .bottom-side .atendimento li, footer .bottom-side .menu li {
+footer .bottom-side .exames-buscados h3, footer .bottom-side .consultas-buscadas h3, footer .bottom-side .saiba-mais h3 {
+  color: red;
+}
+footer .bottom-side .exames-buscados li, footer .bottom-side .exames-buscados a, footer .bottom-side .consultas-buscadas li, footer .bottom-side .consultas-buscadas a, footer .bottom-side .saiba-mais li, footer .bottom-side .saiba-mais a {
   color: var(--color-w2);
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-bottom: 12px;
+  transition: all 0.3s ease-in-out;
+}
+footer .bottom-side .exames-buscados li :hover, footer .bottom-side .exames-buscados a :hover, footer .bottom-side .consultas-buscadas li :hover, footer .bottom-side .consultas-buscadas a :hover, footer .bottom-side .saiba-mais li :hover, footer .bottom-side .saiba-mais a :hover {
+  color: var(--color-w4);
 }
 footer .bottom-side .atendimento {
   grid-column: 2/3;
@@ -85,15 +95,14 @@ footer .info p {
 
 @media screen and (max-width: 1200px) {
   footer .bottom-side {
-    padding: 60px 20px;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
   }
   footer .bottom-side .logo {
     padding-bottom: 60px;
   }
   footer .bottom-side .logo .images-link {
-    justify-content: center;
+    justify-content: flex-start;
   }
   footer .bottom-side .atendimento, footer .bottom-side .menu {
     padding-bottom: 30px;
@@ -119,27 +128,23 @@ footer .info p {
     color: var(--color-p4);
   }
   footer .bottom-side {
+    width: 100%;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
   footer .bottom-side .logo {
     padding-bottom: 60px;
-    text-align: center;
-  }
-  footer .bottom-side .atendimento, footer .bottom-side .menu {
-    grid-column: 1/2;
-    padding-bottom: 30px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+  }
+  footer .bottom-side .logo .images-link {
+    justify-content: center;
+  }
+  footer .bottom-side .logo p {
     text-align: center;
-  }
-  footer .bottom-side .atendimento h1, footer .bottom-side .menu h1 {
-    padding-bottom: 14px;
-  }
-  footer .bottom-side .atendimento li, footer .bottom-side .menu li {
-    font-size: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -18,29 +18,39 @@ export const About = () => {
           <img src={aboutImg} alt="about" />
         </div>
         <div className="right-side">
-          <h1>Encontraremos os <span>melhores</span> médicos e clínicas!</h1>
-          <p>Facilitaremos sua busca para encontrar o profissional, clínica ou laboratório perfeito para os cuidados com a sua saúde, sem precisar se preocupar com o preço.</p>
+          <h1>Tecnologia inovadora para cuidar da sua saúde</h1>
+          <p>Procurar os melhores profissionais de saúde é uma tarefa 
+            complicada e demorada.</p>
+          <p>
+            E mesmo quando encontramos, os custos podem ser altos.
+          </p>
+          
+          <p>
+            A <span>33doctor facilita a busca pelo médico, clínica ou laboratório</span> 
+            perfeito para os cuidados com a sua saúde com 
+            <span> valores mais acessíveis.</span>
+          </p>
 
           <div className="info-about--container">
             <div className="box">
               <AdsClickIcon />
-              <h1>Pontual</h1>
-              <p>Consultas presenciais com preços baixos</p>
+              <h1>Valores acessíveis</h1>
+              <p>Consultas e exames com até 60% de desconto.</p>
             </div>
             <div className="box">
               <ElectricBoltIcon />
-              <h1>Rápido</h1>
-              <p>Consultas presenciais com preços baixos</p>
+              <h1>Agendamento rápido</h1>
+              <p>Agendar é super simples, fácil e rápido.</p>
             </div>
             <div className="box">
               <GpsFixedIcon />
-              <h1>Localidade</h1>
-              <p>Consultas presenciais com preços baixos</p>
+              <h1>Rede particular próxima</h1>
+              <p>Agendamento na rede particular mais próxima a você</p>
             </div>
             <div className="box">
               <WavesIcon />
-              <h1>Novas tecnologias</h1>
-              <p>Consultas presenciais com preços baixos</p>
+              <h1>Sem mensalidades</h1>
+              <p>Sem mensalidades. Pague apenas quando usar.</p>
             </div>
           </div>
         </div>

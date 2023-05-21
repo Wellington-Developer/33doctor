@@ -6,15 +6,18 @@
 .about-container {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   max-width: 1262px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 120px 20px;
 }
 .about-container .left-side {
   grid-column: 1/2;
-  max-width: 540px;
-  position: relative;
+  display: flex;
+}
+.about-container .left-side img {
+  width: 100%;
+  align-self: start;
 }
 .about-container .left-side ::after {
   content: "";
@@ -30,20 +33,23 @@
   grid-column: 2/4;
 }
 .about-container .right-side h1 {
-  font-size: 4rem;
-  line-height: 78px;
-  color: var(--color-c4);
-  font-weight: 500;
-  padding-bottom: 60px;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: var(--color-c3);
+  font-weight: 800;
+  padding-bottom: 30px;
 }
 .about-container .right-side h1 span {
   color: var(--color-p2);
 }
 .about-container .right-side p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: var(--color-c3);
-  padding-bottom: 32px;
+  padding-bottom: 12px;
+}
+.about-container .right-side p span {
+  font-weight: 800;
 }
 .about-container .right-side .info-about--container {
   display: flex;
@@ -53,6 +59,7 @@
   background: var(--color-white);
   border-radius: 5px;
   gap: 32px;
+  margin-top: 30px;
 }
 .about-container .right-side .info-about--container .box {
   width: calc(50% - 32px);
@@ -81,6 +88,7 @@
   .about-container {
     grid-template-columns: minmax(300px, 400px) 1fr;
     gap: 20px;
+    padding: 60px 20px;
   }
   .about-container .left-side {
     grid-column: 1/2;
@@ -107,13 +115,12 @@
   }
   .about-container .left-side {
     max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about-container .left-side img {
-    max-height: 500px;
+    max-width: 50%;
     border-radius: 5px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -138,9 +145,6 @@
 @media screen and (max-width: 450px) {
   .about-container .left-side {
     width: 100%;
-  }
-  .about-container .left-side img {
-    height: 400px;
   }
   .about-container .right-side .info-about--container .box {
     width: 100%;

@@ -9,24 +9,50 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 90px 0;
-  z-index: 1;
+  padding: 90px 20px;
+  z-index: 100;
+  border-radius: 5px;
 }
 .banner-container .info h1 {
   font-size: 2rem;
   line-height: 150%;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   font-weight: 500;
   text-align: center;
+  color: var(--color-w1);
 }
 .banner-container .info h1 span {
   color: var(--color-p2);
+}
+.banner-container .info p {
+  padding-bottom: 1rem;
+  color: var(--color-w2);
+  text-align: center;
+}
+.banner-container .info a {
+  z-index: 99;
+}
+.banner-container .info button {
+  background: var(--color-w1);
+  color: var(--color-p3);
+}
+.banner-container .info button :hover {
+  background: var(--color-w2);
+  color: var(--color-p4);
 }
 .banner-container .shape {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   z-index: -1;
+}
+.banner-container .shape img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 800px) {

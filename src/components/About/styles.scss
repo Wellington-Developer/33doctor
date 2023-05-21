@@ -6,15 +6,19 @@
 .about-container {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   max-width: 1262px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 120px 20px;
 
   .left-side {
     grid-column: 1/2;
-    max-width: 540px;
-    position: relative;
+    display: flex;
+
+    img {
+      width: 100%;
+      align-self: start;
+    }
 
     ::after {
       content: '';
@@ -32,11 +36,11 @@
     grid-column: 2/4;
 
     h1 {
-      font-size: 4rem;
-      line-height: 78px;
-      color: var(--color-c4);
-      font-weight: 500;
-      padding-bottom: 60px;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      color: var(--color-c3);
+      font-weight: 800;
+      padding-bottom: 30px;
 
       span {
         color: var(--color-p2);
@@ -44,10 +48,14 @@
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 28px;
       color: var(--color-c3);
-      padding-bottom: 32px;
+      padding-bottom: 12px;
+
+      span {
+        font-weight: 800;
+      }
     }
 
     .info-about--container {
@@ -58,6 +66,7 @@
       background: var(--color-white);
       border-radius: 5px;
       gap: 32px;
+      margin-top: 30px;
 
       .box {
         width: calc(50% - 32px);
@@ -91,6 +100,7 @@
   .about-container {
     grid-template-columns: minmax(300px, 400px) 1fr;
     gap: 20px;
+    padding: 60px 20px;
 
     .left-side {
       grid-column: 1/2;
@@ -122,13 +132,15 @@
     }
 
     .left-side {
-      max-width: 100%; display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
+      max-width: 100%; 
+      display: flex;
+
+      
+      justify-content: center;
+      align-items: center;
       
       img {
-        max-height: 500px;
+        max-width: 50%;
         border-radius: 5px;
         object-fit: cover;
         padding-bottom: 24px;
@@ -158,9 +170,6 @@
   .about-container {
     .left-side {
       width: 100%;
-      img {
-        height: 400px;
-      }
     }
     .right-side {
       .info-about--container {

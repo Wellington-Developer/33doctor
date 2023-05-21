@@ -29,7 +29,7 @@ export const Testimonials = () => {
   return (
     <div className="testimonial-container">
       <div className="info-side">
-        <h3>Avaliação</h3>
+        <h3>Avaliações</h3>
         <h1>O que estão falando sobre nós?</h1>
       </div>
       <div className="testimonial-side">

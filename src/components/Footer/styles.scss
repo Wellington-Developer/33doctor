@@ -8,24 +8,14 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid var(--color-p4);
+    background: var(--color-w1);
 
     h1 {
       text-align: center;
       max-width: 600px;
       font-size: 3rem;
-      color: var(--color-w1);
+      color: var(--color-c4);
       padding-bottom: 30px;
-    }
-
-    button {
-      background: var(--color-w1);
-      color: var(--color-p3);
-
-      :hover {
-        background: var(--color-w2);
-        color: var(--color-p4);
-      }
     }
   }
 
@@ -34,12 +24,27 @@ footer {
     padding: 120px 20px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    
 
+    h1 {
+      color: var(--color-w2);
+      font-size: 1rem;
+      font-weight: normal;
+      padding-bottom: 8px;
+    }
+
+    p {
+      padding-top: 30px;
+      max-width: 250px;
+    }
+
+    
     .logo {
       grid-column: 1/2;
       transition: all 0.3s ease-in;
-
+      
       .images-link {
         display: grid;
         grid-template-columns: 150px 150px;
@@ -53,7 +58,7 @@ footer {
         color: var(--color-w1);
         padding-bottom: 12px;
       }
-
+      
       img {
         margin-right: 12px;
         color: var(--color-w1);
@@ -62,19 +67,28 @@ footer {
         width: 100%;
       }
     }
-
-    .atendimento, .menu {
+    
+    .exames-buscados, .consultas-buscadas, .saiba-mais {
       h1 {
         color: var(--color-w1);
-        font-size: 1.4rem;
-        font-weight: 500;
+        font-size: 1.25rem;
+        font-weight: 600;
         padding-bottom: 24px;
       }
 
-      li {
+      h3 {
+        color: red;
+      }
+
+      li, a {
         color: var(--color-w2);
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding-bottom: 12px;
+        transition: all 0.3s ease-in-out;
+
+        :hover {
+          color: var(--color-w4);
+        }
       }
     }
 
@@ -104,15 +118,14 @@ footer {
 @media screen and (max-width: 1200px) {
   footer {
     .bottom-side {
-      padding: 60px 20px;
-      grid-template-columns: 200px 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       justify-content: center;
 
       .logo {
         padding-bottom: 60px;
 
         .images-link {
-          justify-content: center;
+          justify-content: flex-start;
         }
       }
 
@@ -152,30 +165,25 @@ footer {
     }
 
     .bottom-side {
+      width: 100%;
       grid-template-columns: 1fr;
       align-items: center;
       justify-content: center;
+      margin: 0;
 
       .logo {
         padding-bottom: 60px;
-        text-align: center;
-      }
-
-      .atendimento, .menu {
-        grid-column: 1 / 2;
-        padding-bottom: 30px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
-      
-        h1 {
-          padding-bottom: 14px;
+        flex-direction: column;
+
+        .images-link {
+          justify-content: center;
         }
 
-        li {
-          font-size: 1rem;
+        p {
+          text-align: center;
         }
 
       }

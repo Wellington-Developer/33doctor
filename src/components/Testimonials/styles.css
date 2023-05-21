@@ -86,7 +86,8 @@
   max-width: 24px;
 }
 .testimonial-container .testimonial-side .right-side .comment-testimonial p {
-  font-size: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   color: var(--color-c3);
 }
 

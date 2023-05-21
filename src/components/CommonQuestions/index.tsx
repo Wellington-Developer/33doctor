@@ -1,9 +1,8 @@
-import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 
 // Styles
 import './styles.css';
@@ -12,6 +11,7 @@ import './styles.css';
 import { accordionQuestions } from '../../data/accordion';
 
 export const CommonQuestions = () => {
+
   return (
     <div className="questions-container">
       <div className="left-side">
@@ -23,21 +23,21 @@ export const CommonQuestions = () => {
         <div className="question">
         {
           accordionQuestions.map((item, index) => (
-            <Accordion key={index} id="accordion">
+            <Accordion key={index} id="accordion" >
               <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>{item.title}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                {
-                  item.paragraph
-                }
-              </Typography>
-            </AccordionDetails>
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                >
+                <AddOutlinedIcon />
+                <Typography id="tipography">{item.title}</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  {
+                    item.paragraph
+                  }
+                </Typography>
+              </AccordionDetails>
             </Accordion>
           ))
         }

@@ -42,7 +42,7 @@ export const Filter = ({ filteredData }: any) => {
           <div className="filter-items">
             {
               filtered.map((item: ResultProps, index: number) => (
-                <Link to="/singlepage/test">
+                <Link to={'/singlepage/'+item.title}>
                   <BoxFilter title={item.title} locale={item.locale} price={item.price} key={index} />
                 </Link>
                 ))

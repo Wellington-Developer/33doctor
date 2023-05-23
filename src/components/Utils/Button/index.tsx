@@ -5,13 +5,25 @@ import { Link } from 'react-router-dom';
 
 interface Props {
   children?: ReactNode,
-  link?: string
+  link?: string,
+  internalLink?: string,
   // any props that come into the component
 }
 
-export const Button = ({ children, link }: Props) => {
+export const Button = ({ children, link, internalLink }: Props) => {
   return (
-    <Link to={link || "#todos"}>
+    internalLink ? (
+      <a href={internalLink}>
+      <button className="button">
+        {
+          children ? 
+          children : 'Agendar'
+        }
+        <EastIcon />
+      </button>
+    </a>
+    ) : (
+      <Link to={link || "#todos"}>
       <button className="button">
         {
           children ? 
@@ -20,5 +32,6 @@ export const Button = ({ children, link }: Props) => {
         <EastIcon />
       </button>
     </Link>
+    )
   )
 }

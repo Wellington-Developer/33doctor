@@ -24,7 +24,6 @@ export const About = () => {
           <p>
             E mesmo quando encontramos, os custos podem ser altos.
           </p>
-          
           <p>
             A <span>33doctor facilita a busca pelo médico, clínica ou laboratório</span> 
             perfeito para os cuidados com a sua saúde com 

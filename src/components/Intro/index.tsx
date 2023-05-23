@@ -8,7 +8,7 @@ export const Intro = () => {
       <div className="left-side">
         <h1>Agendar seus exames e consultas é super simples!</h1>
         <p>❤️ Obtenha os cuidados de saúde que você precisa com <span>valores mais acessíveis</span> na <span>rede particular em Goiânia</span> mais próxima a você.</p>
-        <Button />
+          <Button internalLink="#services"/>
       </div>
 
       <div className="right-side">

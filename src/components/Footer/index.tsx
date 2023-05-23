@@ -78,8 +78,6 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <h1>COnsulte qualquer medico ou clinica que puder</h1>
-
         <div className="saiba-mais">
           <ul>
             <h1>Saiba mais</h1>

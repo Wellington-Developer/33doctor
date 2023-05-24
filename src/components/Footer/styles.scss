@@ -33,7 +33,6 @@ footer {
       font-size: 0.85rem;
       font-weight: normal;
       padding-bottom: 12px;
-
       span {
         font-weight: 700;
       }
@@ -178,6 +177,10 @@ footer {
       align-items: center;
       justify-content: center;
       margin: 0;
+
+      h1 {
+        text-align: center;
+      }
 
       .logo {
         padding-bottom: 60px;

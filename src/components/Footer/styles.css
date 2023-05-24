@@ -140,6 +140,9 @@ footer .info p {
     justify-content: center;
     margin: 0;
   }
+  footer .bottom-side h1 {
+    text-align: center;
+  }
   footer .bottom-side .logo {
     padding-bottom: 60px;
     display: flex;

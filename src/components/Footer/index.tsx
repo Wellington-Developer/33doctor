@@ -30,10 +30,11 @@ export const Footer = () => {
             </div>
           </div>
 
-          <h1>Endereço tal</h1>
-          <h1>contato@contato</h1>
+          <h1>Rua 9-A, 228, St. Aeroporto, Goiânia/GO, CEP: 74075-250</h1>
+          <h1 id="tel"><span>Tel Fixo:</span> (62) 3933-8700</h1>
+          <h1><span>Whatsapp:</span> (62) 3933-8700</h1>
 
-          <p>© Todos os direitos reservados 33 Doctor | 2023</p>
+          <p>© Todos os direitos reservados 33Doctor | 2023</p>
         </div>
 
         <div className="exames-buscados">

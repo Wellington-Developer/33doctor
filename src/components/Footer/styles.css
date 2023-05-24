@@ -27,9 +27,15 @@ footer .bottom-side {
 }
 footer .bottom-side h1 {
   color: var(--color-w2);
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: normal;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
+}
+footer .bottom-side h1 span {
+  font-weight: 700;
+}
+footer .bottom-side #tel {
+  padding-top: 12px;
 }
 footer .bottom-side p {
   padding-top: 30px;

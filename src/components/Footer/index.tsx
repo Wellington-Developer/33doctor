@@ -88,8 +88,12 @@ export const Footer = () => {
             <li>
               <a href="/#services">Serviço</a>
             </li>
-            <li>Sobre a 33 Doctor</li>
-            <li>Politica de privacidade</li>
+            <li>
+              <Link to="/about">Sobre a 33doctor</Link>
+            </li>
+            <li>
+              <Link to="/privacy-policy">Política de Privacidade</Link>
+            </li>
             <li>
               <a href="/#about">Como funciona</a>
             </li>

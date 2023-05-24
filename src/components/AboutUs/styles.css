@@ -1,0 +1,38 @@
+.aboutus-container {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.aboutus-container p {
+  padding: 30px 0;
+  color: var(--color-c3);
+}
+.aboutus-container .info-about {
+  padding-bottom: 60px;
+}
+.aboutus-container .info-about h1 {
+  font-size: 2rem;
+  color: var(--color-p2);
+  padding-bottom: 12px;
+  font-weight: 800;
+}
+.aboutus-container .info-about .crumb {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.aboutus-container .info-about .crumb #active {
+  color: var(--color-p3);
+}
+.aboutus-container .info-about .crumb a {
+  color: var(--color-c3);
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.aboutus-container .info-about .crumb a:hover {
+  color: var(--color-p2);
+}
+.aboutus-container .info-about .crumb svg {
+  padding: 4px;
+  color: var(--color-p2);
+}/*# sourceMappingURL=styles.css.map */

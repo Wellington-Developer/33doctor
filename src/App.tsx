@@ -11,6 +11,8 @@ import { ChangedPage } from './components/ChangedPage';
 import { NotFound } from './components/NotFound';
 import { SinglePageProduct } from './components/SinglePageProduct';
 import { Footer } from './components/Footer';
+import { AboutUs } from './components/AboutUs';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/pages/:id" element={ <ChangedPage /> } />
           <Route path="/*" element={<NotFound />} />
           <Route path="/singlepage/:id" element={<SinglePageProduct />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,0 +1,46 @@
+.aboutus-container {
+    max-width: 1262px;
+    margin: 0 auto;
+    padding: 60px 20px;
+
+    p {
+        padding: 30px 0;
+        color: var(--color-c3);
+    }
+
+    .info-about {
+        padding-bottom: 60px;
+
+        h1 {
+            font-size: 2rem;
+            color: var(--color-p2);
+            padding-bottom: 12px;
+            font-weight: 800;
+        }
+
+        .crumb {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+
+            #active {
+                color: var(--color-p3);
+            }
+
+            a {
+                color: var(--color-c3);
+                font-weight: 500;
+                transition: 0.3s ease-in-out;
+            }
+
+            a:hover {
+                color: var(--color-p2);
+            }
+
+            svg {
+                padding: 4px;
+                color: var(--color-p2)
+            }
+        }
+    }
+}

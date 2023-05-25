@@ -34,17 +34,24 @@
     align-items: center;
     justify-content: center;
     h3 {
-      color: var(--color-p2);
-      text-transform: uppercase;
+      color: #407c6d;
       font-size: 1rem;
-      padding-bottom: 18px;
+      padding: 4px;
+      border-radius: 5px;
+      background: #a7e7d7;
+      margin-bottom: 90px;
     }
 
     h1 {
       font-size: 2rem;
       line-height: 40px;
       color: var(--color-c4);
-      padding-bottom: 90px;
+      padding-bottom: 14px;
+
+      span {
+        color: var(--color-p4);
+        font-weight: 800;
+      }
     }
   }
 
@@ -86,6 +93,7 @@
     .info {
       h1 {
         text-align: center;
+        max-width: 400px;
       }
     }
   }

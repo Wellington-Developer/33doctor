@@ -6,8 +6,8 @@ export const services = [
     link: '/pages/imagem',
   },
   {
-    title: 'Exames',
-    type: 'Laboratoriais',
+    title: 'Exames de',
+    type: 'Laboratório',
     price: 5,
     link: '/pages/laboratorial',
   },

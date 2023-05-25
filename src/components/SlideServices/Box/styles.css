@@ -13,7 +13,7 @@
   height: 300px;
   border-radius: 5px;
   padding: 24px 48px;
-  background-color: var(--color-w1);
+  box-shadow: 2px 2px 83px -75px rgba(238, 195, 195, 0.25);
 }
 .box-info .info-card {
   display: flex;
@@ -30,6 +30,7 @@
   font-weight: 400;
   text-align: center;
   max-width: 250px;
+  padding-bottom: 24px;
 }
 .box-info .info-card h1 span {
   font-weight: bold;
@@ -40,15 +41,20 @@
   text-align: center;
   font-weight: 500;
   padding-bottom: 12px;
+  line-height: 1.5rem;
 }
 .box-info .price h3 span {
-  color: var(--color-p2);
-  font-weight: 600;
+  color: var(--color-p3);
+  background: #eec3c3;
+  padding: 2px;
+  border-radius: 5px;
+  font-weight: 800;
 }
 .box-info .price h6 {
   padding-top: 8px;
   font-weight: 400;
   text-align: center;
+  color: var(--color-c2);
 }
 
 @media screen and (max-width: 600px) {

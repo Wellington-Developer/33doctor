@@ -45,8 +45,8 @@ export const SlideServices = () => {
   return (
     <div className="slide-container" id="services">
       <div className="info">
-        <h3>Agendamento rápido e fácil</h3>
-        <h1>Qual exame ou consulta você quer agendar hoje?</h1>
+        <h1>Agendar agora com até <span>60% de desconto</span></h1>
+        <h3>Leve apenas alguns minutos</h3>
       </div>
 
       <h1 className="drag">

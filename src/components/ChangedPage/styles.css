@@ -1,25 +1,35 @@
 .changed-page--container {
   max-width: 1262px;
   margin: 60px auto;
+  padding: 0 20px;
 }
 .changed-page--container .banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  flex-direction: column;
+  height: 300px;
   border-radius: 5px;
-  padding: 0 20px;
   position: relative;
   z-index: 1;
+  border-radius: 5px;
 }
 .changed-page--container .banner h1 {
   color: var(--color-w1);
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+.changed-page--container .banner p {
+  color: var(--color-w2);
+  font-size: 1.25rem;
+}
+.changed-page--container .banner p span {
+  font-weight: 800;
 }
 .changed-page--container .banner img {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -28,5 +38,4 @@
      object-fit: cover;
   z-index: -1;
   border-radius: 5px;
-  filter: brightness(40%);
 }/*# sourceMappingURL=styles.css.map */

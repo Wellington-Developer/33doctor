@@ -2,7 +2,7 @@
 import './styles.css';
 
 // MUI Icons
-import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 type ResultProps = {
   title: string,
@@ -10,16 +10,12 @@ type ResultProps = {
   price: number,
 }
 
-export const BoxFilter = ({title, locale, price}: ResultProps) => {
+export const BoxFilter = ({title}: ResultProps) => {
   return (
     <div className="box-filter">
-      <h1>{title}</h1>
-      <div className="info-filter--box">
-        <p>
-          <RoomOutlinedIcon />
-          {locale}
-        </p>
-        <h3>R$ {price},00</h3>
+      <div className="box-filter--info">
+        <h1>{title}</h1>
+        <ChevronRightIcon />
       </div>
     </div>
   )

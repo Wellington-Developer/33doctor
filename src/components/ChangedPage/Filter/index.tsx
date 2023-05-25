@@ -21,21 +21,12 @@ export const Filter = ({ filteredData }: any) => {
   return (
     <div className="filter-container">
       <div >
-        <div className="titles">
-          <h1>A partir de R$ xx,xx</h1>
-        </div>
-
         <div className="filter">
           <div className="filter-input">
-            <input type="text" placeholder="Do que você precisa?" 
+            <input type="text" placeholder="Qual exame você quer agendar?" 
               onChange={(e) => setSearch(e.target.value)}
               value={search}
             />
-          </div>
-
-          <div className="filter-right">
-            <h1>Preço</h1>
-            <h1>Localidade</h1>
           </div>
         </div>
         

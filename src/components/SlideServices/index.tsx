@@ -45,7 +45,7 @@ export const SlideServices = () => {
   return (
     <div className="slide-container" id="services">
       <div className="info">
-        <h1>Agendar agora com até <span>60% de desconto</span></h1>
+        <h1>Agendar agora com até <br /><span>60% de desconto</span></h1>
         <h3>Leve apenas alguns minutos</h3>
       </div>
 

@@ -14,11 +14,3 @@
   cursor: pointer;
   letter-spacing: 0.1em;
 }
-
-@media screen and (max-width: 560px) {
-  .button {
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    gap: 6px;
-  }
-}

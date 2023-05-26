@@ -58,8 +58,9 @@
 @media screen and (max-width: 600px) {
   .box-info {
     max-width: 100%;
-    padding: 4px;
-    height: 240px;
+    padding: 12px 0;
+    height: 250px;
+    margin-bottom: 12px;
   }
   .box-info .info-card h1 {
     font-size: 1.25rem;

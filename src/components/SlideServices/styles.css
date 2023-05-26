@@ -75,6 +75,7 @@
     width: 100%;
     flex-wrap: nowrap;
     gap: 12px;
+    overflow: hidden;
   }
   .slide-container .info h1 {
     text-align: center;

@@ -114,17 +114,30 @@
 @media screen and (max-width: 1125px) {
   .filter-container {
     .filter-items {
-      justify-content: center;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
+
 }
 
-@media screen and (max-width: 768px) {
+.filter {
+  .filter-input {
+    min-width: 300px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 965px) {
   .filter-container {
     max-width: 1262px;
     margin: 0 auto;
 
+    .filter-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
     .filter {
       width: 100%;
       .filter-right {
@@ -136,8 +149,9 @@
         width: 100%;
         
         input {
-          max-width: 100%;
+          min-width: 300px;
           width: 100%;
+          max-width: 100%;
         }
       }
     }
@@ -185,6 +199,11 @@
 @media screen and (max-width: 600px) {
   .filter-container {
     padding: 20px;
+
+    .filter-items {
+      grid-template-columns: 1fr;
+    }
+
     .titles {
       justify-content: start;
       align-items: start;

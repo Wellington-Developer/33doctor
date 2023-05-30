@@ -17,7 +17,7 @@
 .box-filter .box-filter--info {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 30px;
 }
 .box-filter .price h1 {
   color: var(--color-p2);
@@ -34,4 +34,10 @@
   width: 5px;
   background: var(--color-p2);
   border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .box-filter {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

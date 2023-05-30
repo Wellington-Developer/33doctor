@@ -38,4 +38,24 @@
      object-fit: cover;
   z-index: -1;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 950px) {
+  .changed-page--container .banner {
+    padding: 30px 40px;
+    border-radius: 5px;
+  }
+  .changed-page--container .banner h1 {
+    font-size: 2rem;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+  .changed-page--container .banner p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .changed-page--container .banner img {
+    height: 300px;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -44,3 +44,28 @@
   }
 
 }
+
+@media screen and (max-width: 950px) {
+  .changed-page--container {
+    .banner {
+      padding: 30px 40px;
+      border-radius: 5px;
+
+      h1 {
+        font-size: 2rem;
+        padding-bottom: 12px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      img {
+        height: 300px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

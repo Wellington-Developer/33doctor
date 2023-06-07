@@ -22,14 +22,8 @@ export const SinglePageProduct = () => {
   const [active, setActive] = useState(false);
   const [name, setName] = useState('');
   const link = `https://wa.me/556239338700?text=Olá,%20me%20chamo%20${name}%20e%20tenho%20interesse%20na%20categoria%20'${id}'.`
-  const [buttonActive, setButtonActive] = useState(false);
   const handleChange = (event: any) => {
     setName(event.target.value);
-    if(name.length <= -1) {
-      setButtonActive(false)
-    } else {
-      setButtonActive(true)
-    }
   }
 
   return (
@@ -114,9 +108,7 @@ export const SinglePageProduct = () => {
             <form>
               <input type="text" placeholder="Seu nome" value={name} onChange={handleChange} />
             </form>
-              {
-                buttonActive && <Button link={link}/>
-              }
+                <Button link={link}/>
             </div>
         </div>
       </div>

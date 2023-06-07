@@ -2,7 +2,9 @@ import { Button } from "../Utils/Button";
 import { Link, useParams } from 'react-router-dom';
 
 // Assets
-import tacImg from '../../assets/icons/tac.svg';
+import AdsClickIcon from '@mui/icons-material/AdsClick';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
+import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import bannerImg from '../../assets/singleproduct.jpeg';
 
 // Styles
@@ -18,7 +20,17 @@ export const SinglePageProduct = () => {
   const { id } = useParams()
 
   const [active, setActive] = useState(false);
-  console.log(active)
+  const [name, setName] = useState('');
+  const link = `https://wa.me/556239338700?text=Olá,%20me%20chamo%20${name}%20e%20tenho%20interesse%20na%20categoria%20'${id}'.`
+  const [buttonActive, setButtonActive] = useState(false);
+  const handleChange = (event: any) => {
+    setName(event.target.value);
+    if(name.length <= -1) {
+      setButtonActive(false)
+    } else {
+      setButtonActive(true)
+    }
+  }
 
   return (
     <div className="container-page--product">
@@ -36,7 +48,7 @@ export const SinglePageProduct = () => {
 
         <div className="cta-info">
           <div className="img-cta">
-            <img src={tacImg} alt="tac" />
+            <AdsClickIcon />
           </div>
 
           <p>
@@ -49,26 +61,26 @@ export const SinglePageProduct = () => {
 
         <div className="box-container--cta">
           <div className="box-cta">
-            <img src={tacImg} alt="tac" />
+            <AdsClickIcon />
             <div className="info-box">
               <h1>Valores acessíveis</h1>
-              <p>Consultas e exames com 80% de desconto</p>
+              <p>Consultas e exames com 60% de desconto.</p>
             </div>
           </div>
 
           <div className="box-cta">
-            <img src={tacImg} alt="tac" />
+            <ElectricBoltIcon />
             <div className="info-box">
-              <h1>Valores acessíveis</h1>
-              <p>Consultas e exames com 80% de desconto</p>
+              <h1>Agendamento Rápido</h1>
+              <p>Agendar é super símples, fácil e rápido.</p>
             </div>
           </div>
 
           <div className="box-cta">
-            <img src={tacImg} alt="tac" />
+            <GpsFixedIcon />
             <div className="info-box">
-              <h1>Valores acessíveis</h1>
-              <p>Consultas e exames com 80% de desconto</p>
+              <h1>Rede particular próxima</h1>
+              <p>Agendamento na rede particular mais próxima a você.</p>
             </div>
           </div>
         </div>
@@ -99,12 +111,13 @@ export const SinglePageProduct = () => {
           <div className="particular-info">
             <h1>Rede particular</h1>
             <h3>Agende agora com até 60% de desconto</h3>
-            <form action="">
-              <input type="text" placeholder="Seu nome"/>
-              <input type="date"/>
-              <Button />
+            <form>
+              <input type="text" placeholder="Seu nome" value={name} onChange={handleChange} />
             </form>
-          </div>
+              {
+                buttonActive && <Button link={link}/>
+              }
+            </div>
         </div>
       </div>
     </div>

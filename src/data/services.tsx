@@ -19,7 +19,7 @@ export const services = [
   },
   {
     title: 'Exames',
-    type: 'Cardilógicos',
+    type: 'Cardiológicos',
     price: 40,
     link: '/pages/cardiologico',
   },

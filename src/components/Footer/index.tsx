@@ -1,10 +1,7 @@
-import { Button } from '../Utils/Button'
 import './styles.css'
 
 // Assets
 import logoImg from '../../assets/logo-white.png';
-import googlePlayImg from '../../assets/google-play.png';
-import appleStoreImg from '../../assets/apple-store.png';
 
 // Link
 import { Link } from 'react-router-dom';
@@ -12,23 +9,9 @@ import { Link } from 'react-router-dom';
 export const Footer = () => {
   return (
     <footer>
-      <div className="top-side">
-        <h1>Você já cuidou da <span>saúde</span> sua familia hoje?</h1>
-        <Button />
-      </div>
       <div className="bottom-side">
         <div className="logo">
           <img src={logoImg} alt="logo" />
-          <div className="social-media">
-            <div className="images-link">
-              <Link to="https://play.google.com/store/search?q=33doctor&c=apps&hl=pt_PT&pli=1">
-                <img src={googlePlayImg} alt="google play"/>
-              </Link>
-              <Link to="https://play.google.com/store/search?q=33doctor&c=apps&hl=pt_PT&pli=1">
-                <img src={appleStoreImg} alt="apple store"/>
-              </Link>
-            </div>
-          </div>
 
           <h1>Rua 9-A, 228, St. Aeroporto, Goiânia/GO, CEP: 74075-250</h1>
           <h1 id="tel"><span>Tel Fixo:</span> (62) 3933-8700</h1>
@@ -82,18 +65,13 @@ export const Footer = () => {
         <div className="saiba-mais">
           <ul>
             <h1>Saiba mais</h1>
-            <li>Seja um franqueado</li>
+            <li>
+              <a href="https://franquias33doctor.com.br">
+                Seja um franqueado
+              </a>
+            </li>
             <li>
               <a href="/#home">Inicio</a>
-            </li>
-            <li>
-              <a href="/#services">Serviço</a>
-            </li>
-            <li>
-              <Link to="/about">Sobre a 33doctor</Link>
-            </li>
-            <li>
-              <Link to="/privacy-policy">Política de Privacidade</Link>
             </li>
             <li>
               <a href="/#about">Como funciona</a>

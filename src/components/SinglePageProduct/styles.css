@@ -183,7 +183,7 @@
 .container-page--product .right-side .box .particular-info form input::placeholder {
   color: var(--color-c3);
 }
-.container-page--product .right-side .box .particular-info form button {
+.container-page--product .right-side .box .particular-info button {
   margin-top: 24px;
   width: 100%;
   display: flex;

@@ -9,7 +9,7 @@
 .header-container .left-side {
   max-width: 250px;
 }
-.header-container .right-side .hidden {
+.header-container .right-side .hidden, .header-container .right-side .showed {
   display: none;
   color: var(--color-w4);
 }

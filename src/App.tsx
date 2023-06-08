@@ -13,6 +13,7 @@ import { SinglePageProduct } from './components/SinglePageProduct';
 import { Footer } from './components/Footer';
 import { AboutUs } from './components/AboutUs';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
+import GoToTop from './components/GoToTop';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
+        <GoToTop />
       </BrowserRouter>
     </>
   );

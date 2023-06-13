@@ -5,9 +5,10 @@ type PropsHead = {
 }
 
 export const Head = (props: PropsHead) => {
+    const title = props.title
     React.useEffect(() => {
-        document.title = props.title + ' | 33 Doctor'
-    }, [])
+        document.title = title + ' | 33 Doctor'
+    }, [title])
     
     return (
         <></>

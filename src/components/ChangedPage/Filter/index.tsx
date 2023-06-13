@@ -16,6 +16,7 @@ export const Filter = ({ filteredData }: any) => {
     name: string,
     locale: string,
     price: number,
+    type: string,
   }
 
   return (
@@ -33,7 +34,7 @@ export const Filter = ({ filteredData }: any) => {
           <div className="filter-items">
             {
               filtered.map((item: ResultProps, index: number) => (
-                <Link to={'/singlepage/'+item.name}>
+                <Link to={`/${item.type}/`+item.name.toLocaleLowerCase().replace(' ', '-')} key={index}>
                   <BoxFilter title={item.name} locale={item.locale} price={item.price} key={index} />
                 </Link>
                 ))

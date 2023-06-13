@@ -35,8 +35,6 @@ export const SlideServices = () => {
     carousel.current && setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
   }, [])
 
-  services.map((item) => console.log(item))
-
   return (
     <div className="slide-container" id="services">
       <div className="info">

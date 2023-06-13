@@ -16,6 +16,7 @@ import {useState} from 'react';
 
 // MUI Icons
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import { Head } from "../Utils/Head";
 
 export const SinglePageProduct = () => {
   const { id } = useParams()
@@ -26,20 +27,29 @@ export const SinglePageProduct = () => {
   const handleChange = (event: any) => {
     setName(event.target.value);
   }
-  const filteredData = id && data.filter((dat) => dat.name.toLowerCase().includes(id.toLocaleLowerCase()))
-  console.log(filteredData)
+  const filteredData = id && data.filter((dat) => dat.name.toLowerCase().includes(id.toLocaleLowerCase().replace('-', ' ')))
 
   return (
     <div className="container-page--product">
+      {
+        filteredData &&
+        <Head title={filteredData[0].title} />
+      }
       <div className="left-side">
         <div className="info-product">
-          <h1>Agendar <span>{id}</span> em Goiânia</h1>
+          <h1>Agendar <span>{filteredData && filteredData[0].name}</span> em Goiânia</h1>
           <div className="bradcumb">
-            <Link to="/">Ínicio</Link>
+            <Link to="/">Início</Link>
             <ChevronRightIcon />
-            <Link to={'/pages/'+id}>Páginas</Link>
+            {
+              filteredData && 
+              <Link to={'/agendamentos/'+filteredData[0].type}>Páginas</Link>
+            }
             <ChevronRightIcon />
-            <Link to={'/singlepage/'+id} id="link">{id}</Link>
+            {filteredData &&
+          
+            <Link to={`/${filteredData[0].type}/`+filteredData[0].name} id="link">{filteredData[0].name}</Link>
+            }
           </div>
         </div>
 

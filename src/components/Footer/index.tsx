@@ -24,19 +24,19 @@ export const Footer = () => {
           <ul>
             <h1>Exames mais buscados</h1>
             <li>
-              <Link to="pages/laboratorial">Laboratoriais</Link>
+              <Link to="/agendamentos/laboratorio">Laboratoriais</Link>
             </li>
             <li>
-              <Link to="pages/imagem">Imagem</Link>
+              <Link to="/agendamentos/imagem">Imagem</Link>
             </li>
             <li>
-              <Link to="pages/cardiologico">Cardiológico</Link>
+              <Link to="/agendamentos/cardiologico">Cardiológico</Link>
             </li>
             <li>
-              <Link to="pages/oftalmologico">Oftalmológico</Link>
+              <Link to="/agendamentos/oftalmologico">Oftalmológico</Link>
             </li>
             <h3>
-              <Link to="pages/exame">Ver todos</Link>
+              <Link to="/agendamentos/exame">Ver todos</Link>
             </h3>
           </ul>
         </div>
@@ -45,17 +45,17 @@ export const Footer = () => {
           <ul>
             <h1>Consultas mais buscadas</h1>
             <li>
-              <Link to="pages/consulta" key="1">
+              <Link to="/agendamentos/cardiologico" key="1">
                 Cardiológico  
               </Link>
             </li>
             <li>
-              <Link to="pages/consulta" key="2">
+              <Link to="/agendamentos/oftalmologico" key="2">
                 Oftalmológico  
               </Link>
             </li>
             <h3>
-              <Link to="pages/consulta" key="3">
+              <Link to="/agendamentos/consulta" key="3">
                 Ver todos
               </Link>
             </h3>

@@ -24,7 +24,7 @@ function App() {
           <Route path="/" element={ <Home /> } />
           <Route path="/agendamentos/:id" element={ <ChangedPage /> } />
           <Route path="/*" element={<NotFound />} />
-          <Route path="/singlepage/:id" element={<SinglePageProduct />} />
+          <Route path="/:id/:id" element={<SinglePageProduct />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>

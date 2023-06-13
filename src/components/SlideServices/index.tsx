@@ -31,16 +31,11 @@ export const SlideServices = () => {
 
   const images = [ tac, microscopeImg, doctorMaleImg, heartCardiogramImg, opthalmologyImg, hospitalizedImg ]
 
-  type servicesProps = {
-    title: string,
-    type: string,
-    price: number,
-    link: string,
-  }
-
   useEffect(() => {
     carousel.current && setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
   }, [])
+
+  services.map((item) => console.log(item))
 
   return (
     <div className="slide-container" id="services">
@@ -62,9 +57,9 @@ export const SlideServices = () => {
         >
           {
             services &&
-            services.map((item: servicesProps, index: number) => (
-              <Box title={item.title} type={item.type} price={item.price} link={item.link} key={index} image={images[index]}/>
-            ))
+            services.map((item, index): any => {
+              return <Box title={item.title} price={item.price} link={item.link} image={images[index]} key={index} />
+            })
           }
         </motion.div>
       </motion.div>

@@ -13,7 +13,7 @@ export const Filter = ({ filteredData }: any) => {
   const filtered = filteredData.filter((singleData: any) => singleData.title.toLowerCase().includes(search.toLocaleLowerCase()))
 
   type ResultProps = {
-    title: string,
+    name: string,
     locale: string,
     price: number,
   }
@@ -33,8 +33,8 @@ export const Filter = ({ filteredData }: any) => {
           <div className="filter-items">
             {
               filtered.map((item: ResultProps, index: number) => (
-                <Link to={'/singlepage/'+item.title}>
-                  <BoxFilter title={item.title} locale={item.locale} price={item.price} key={index} />
+                <Link to={'/singlepage/'+item.name}>
+                  <BoxFilter title={item.name} locale={item.locale} price={item.price} key={index} />
                 </Link>
                 ))
             }

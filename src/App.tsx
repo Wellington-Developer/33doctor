@@ -22,7 +22,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={ <Home /> } />
-          <Route path="/pages/:id" element={ <ChangedPage /> } />
+          <Route path="/agendamentos/:id" element={ <ChangedPage /> } />
           <Route path="/*" element={<NotFound />} />
           <Route path="/singlepage/:id" element={<SinglePageProduct />} />
           <Route path="/about" element={<AboutUs />} />

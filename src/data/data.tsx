@@ -1,62 +1,82 @@
 export const data = [
   {
-    title: 'Exame de imagem',
-    locale: 'Campinas',
-    price: 90
+   "type": "cardiologicos",
+   "name": "Eletrocardiograma (ECG) ",
+   "description1": "Agendar Eletrocardiograma (ECG) em Goiânia",
+   "description2": "Agende um Eletrocardiograma (ECG) acessível em Goiânia. Exame rápido e seguro para detectar problemas cardíacos. Valores acessíveis na rede particular.",
+   "description3": "O Eletrocardiograma (ECG) é um exame não invasivo e indolor que registra a atividade elétrica do coração. Durante o procedimento, são colocados eletrodos adesivos em pontos estratégicos do corpo, como no peito, nos braços e nas pernas. Esses eletrodos captam os sinais elétricos produzidos pelo coração e os transmitem para o aparelho de ECG. O exame de Eletrocardiograma é rápido e simples, geralmente realizado em poucos minutos. Ele fornece informações importantes sobre o ritmo cardíaco, a presença de arritmias, a condução elétrica do coração e a saúde geral do músculo cardíaco.\nDurante o procedimento, é importante permanecer quieto e relaxado para garantir a precisão dos resultados. O profissional de saúde avalia as ondas, intervalos e segmentos do ECG para identificar possíveis anormalidades cardíacas, como ritmos irregulares, bloqueios de condução ou sinais de lesões no coração.",
+   "title": "Exame Eletrocardiograma (ECG) Acessível em Goiânia | Valores Acessíveis | Agendamento na Rede Particular | 33doctor",
+   "meta_tag_description": "Agende um Eletrocardiograma (ECG) acessível em Goiânia. Exame rápido e seguro para detectar problemas cardíacos. Valores acessíveis na rede particular.",
+   "url": "agendar-eletrocardiograma-goiania",
   },
   {
-    title: 'Consulta cardiologico',
-    locale: 'Campinas',
-    price: 120
+   "type": "cardiologicos",
+   "name": "Ecocardiograma em Goiânia",
+   "description1": "Agendar Ecocardiograma em Goiânia",
+   "description2": "Realize um Ecocardiograma em Goiânia a preços acessíveis. Avalie a função cardíaca e identifique problemas nas válvulas e no músculo do coração na rede particular.",
+   "description3": "O Ecocardiograma é um exame de imagem não invasivo que utiliza ondas sonoras (ultrassom) para criar imagens em tempo real do coração. Durante o procedimento, um transdutor de ultrassom é colocado sobre o peito e movido suavemente, emitindo ondas sonoras de alta frequência que atravessam o corpo e retornam como ecos, formando imagens detalhadas do coração. O exame de Ecocardiograma permite avaliar a estrutura e a função do coração, proporcionando informações valiosas sobre o tamanho e a forma do coração, o funcionamento das válvulas cardíacas, a espessura das paredes do coração, a contratilidade do músculo cardíaco e o fluxo sanguíneo.",
+   "title": "Exame Ecocardiograma Acessível em Goiânia | Valores Acessíveis | Agendamento na Rede Particular | 33doctor",
+   "meta_tag_description": "Realize um Ecocardiograma em Goiânia a preços acessíveis. Avalie a função cardíaca e identifique problemas nas válvulas e no músculo do coração na rede particular.",
+   "url": "agendar-ecocardiograma-goiania",
   },
   {
-    title: 'Consulta oftalmologico',
-    locale: 'Campinas',
-    price: 80
+   "type": "cardiologicos",
+   "name": "Teste ergométrico",
+   "description1": "Agendar Teste ergométrico em Goiânia",
+   "description2": "Agende um Teste Ergométrico (teste de esforço) em Goiânia com valores acessíveis na rede particular. Avalie a resposta do seu coração ao exercício físico.",
+   "description3": "O Teste Ergométrico, também conhecido como teste de esforço, é um exame que avalia a resposta do coração durante o exercício físico. Ele é realizado em uma esteira ou bicicleta ergométrica, na qual o paciente é monitorado enquanto caminha, corre ou pedala, aumentando gradualmente a intensidade do esforço. Durante o teste, são registrados o ritmo cardíaco, a pressão arterial, a respiração e a atividade elétrica do coração por meio de eletrodos e monitores. Essas informações são fundamentais para avaliar a capacidade funcional do coração, o fluxo sanguíneo, a presença de arritmias e a resposta do sistema cardiovascular ao esforço físico. O Teste Ergométrico é um procedimento seguro, realizado sob a supervisão de um médico e de uma equipe especializada. Ele é indicado para diagnosticar doenças cardíacas, avaliar a condição física, monitorar o efeito de tratamentos cardíacos e determinar limitações para atividades físicas.",
+   "title": "Exame Teste Ergométrico em Goiânia | Valores Acessíveis | Agendamento na Rede Particular | 33doctor",
+   "meta_tag_description": "Agende um Teste Ergométrico (teste de esforço) em Goiânia com valores acessíveis na rede particular. Avalie a resposta do seu coração ao exercício físico.",
+   "url": "agendar-teste-ergometrico-goiania",
   },
   {
-    title: 'Consulta cardiologico',
-    locale: 'São Paulo',
-    price: 140
+   "type": "cardiologicos",
+   "name": "Holter 24 horas",
+   "description1": "Agendar Holter 24 horas em Goiânia",
+   "description2": "Agende o Holter 24 horas em Goiânia a preços acessíveis. Monitore a atividade elétrica do coração durante todo o dia e detecte possíveis arritmias. Rede particular.",
+   "description3": "O Holter 24 horas é um exame que monitora a atividade elétrica do coração ao longo de um período estendido de 24 horas. Ele é realizado com o uso de um pequeno aparelho portátil, chamado de Holter, que registra continuamente o ritmo cardíaco do paciente durante suas atividades diárias normais.\nDurante o exame, são colocados eletrodos adesivos no peito do paciente, que estão conectados ao aparelho Holter. O dispositivo registra e armazena as informações sobre os batimentos cardíacos ao longo do dia e da noite, permitindo que o médico avalie a ocorrência de arritmias, alterações do ritmo cardíaco e outras anormalidades.\n\n",
+   "title": "Exame Holter 24 horas em Goiânia | Valores Acessíveis | Agendamento na Rede Particular | 33doctor",
+   "meta_tag_description": "Agende o Holter 24 horas em Goiânia a preços acessíveis. Monitore a atividade elétrica do coração durante todo o dia e detecte possíveis arritmias. Rede particular.",
+   "url": "agendar-holter24horas-goiania",
   },
   {
-    title: 'Exame de imagem',
-    locale: 'Campinas',
-    price: 90
+   "type": "cardiologicos",
+   "name": "Cateterismo cardíaco",
+   "description1": "Agendar Cateterismo Cardiaco em Goiânia",
+   "description2": "Realize o Cateterismo Cardíaco em Goiânia na rede particular com valores acessíveis. Obtenha imagens detalhadas das artérias coronárias e avalie a saúde do seu coração.",
+   "description3": "O Cateterismo Cardíaco é um procedimento invasivo que permite avaliar a saúde das artérias coronárias e a função do coração. Durante o exame, um fino cateter é inserido em uma artéria, geralmente na região da virilha, e é cuidadosamente guiado até o coração sob orientação de imagens radiológicas em tempo real. O cateter é utilizado para injetar um contraste especial nas artérias coronárias, permitindo que elas sejam visualizadas claramente. Esse contraste realça as estruturas das artérias, ajudando o médico a identificar obstruções, estreitamentos, placas de aterosclerose ou outras anormalidades.\nDurante o Cateterismo Cardíaco, o paciente é monitorado de perto, e o médico especialista registra a pressão sanguínea e os ritmos cardíacos em vários pontos do coração. Isso permite avaliar a função do músculo cardíaco, as pressões dentro das câmaras cardíacas e a presença de possíveis anomalias.\nO Cateterismo Cardíaco é realizado em ambiente hospitalar, sob anestesia local ou sedação leve. O procedimento pode durar entre 30 minutos a algumas horas, dependendo da complexidade do caso. Após o exame, o paciente é monitorado por um curto período para garantir sua estabilidade antes de retornar ao quarto.\n\n",
+   "title": "Exame Cateterismo Cardíaco em Goiânia | Valores Acessíveis | Agendamento na Rede Particular | 33doctor",
+   "meta_tag_description": "Realize o Cateterismo Cardíaco em Goiânia na rede particular com valores acessíveis. Obtenha imagens detalhadas das artérias coronárias e avalie a saúde do seu coração.",
+   "url": "agendar-cateterismo-goiania",
   },
   {
-    title: 'Exame Laboratorial',
-    locale: 'Campinas',
-    price: 120
+   "type": "cardiologicos",
+   "name": "Ressonância magnética cardíaca",
+   "description1": "Agendar Ressonância magnética cardíaca em Goiânia",
+   "description2": "Agende uma Ressonância Magnética Cardíaca em Goiânia com valores acessíveis. Imagens detalhadas do seu coração para avaliar sua saúde cardiovascular na rede particular.",
+   "description3": "A Ressonância Magnética Cardíaca é um exame não invasivo que utiliza um campo magnético e ondas de rádio para obter imagens detalhadas do coração. Durante o procedimento, o paciente é posicionado em uma maca deslizante dentro de um aparelho de ressonância magnética, que captura imagens precisas e em alta resolução. A Ressonância Magnética Cardíaca é capaz de fornecer informações abrangentes sobre a estrutura e a função do coração, incluindo a avaliação do tamanho e da forma do órgão, a análise das válvulas cardíacas, a avaliação da contratilidade do músculo cardíaco e a detecção de possíveis lesões ou cicatrizes. Durante o exame, são realizadas sequências de imagens em diferentes planos, permitindo uma visualização completa do coração e das estruturas adjacentes. Em alguns casos, pode ser necessário a administração de um contraste intravenoso para melhorar a visualização de certas áreas.\nA Ressonância Magnética Cardíaca é um exame seguro e indolor, porém requer que o paciente fique imóvel durante o procedimento para garantir a qualidade das imagens obtidas. A duração do exame pode variar, geralmente entre 30 a 60 minutos.\n\n\n\n",
+   "title": "Ressonância Magnética Cardíaca em Goiânia | Valores Acessíveis | Agendamento na Rede Particular | 33doctor",
+   "meta_tag_description": "Agende uma Ressonância Magnética Cardíaca em Goiânia com valores acessíveis. Imagens detalhadas do seu coração para avaliar sua saúde cardiovascular na rede particular.",
+   "url": "agendar-resonanciamagnatica-goiania",
   },
   {
-    title: 'Consulta oftalmologico',
-    locale: 'Campinas',
-    price: 80
+   "type": "cardiologicos",
+   "name": "Cintilografia miocárdica",
+   "description1": "Cintilografia miocárdica em Goiânia",
+   "description2": "Agende uma Cintilografia Miocárdica em Goiânia a preços acessíveis na rede particular. Avalie o fluxo sanguíneo para o coração e detecte possíveis obstruções nas artérias coronárias.",
+   "description3": "A Cintilografia Miocárdica é um exame que utiliza uma substância radioativa para avaliar o fluxo sanguíneo para o coração. Durante o procedimento, uma pequena quantidade de um traçador radioativo é injetada na corrente sanguínea do paciente. Em seguida, uma câmera especial chamada gama câmara é utilizada para capturar imagens do coração em repouso e durante o estresse físico. O traçador radioativo é absorvido pelo músculo cardíaco e emite radiação que é detectada pela câmera. Essas imagens permitem avaliar o fornecimento de sangue para diferentes áreas do coração e identificar possíveis áreas com fluxo sanguíneo reduzido, indicando obstruções nas artérias coronárias. A Cintilografia Miocárdica pode ser realizada em repouso ou em conjunto com um teste de estresse, como o teste ergométrico ou farmacológico. Durante o teste de estresse, o paciente é submetido a um esforço físico ou recebe medicamentos que simulam o estresse cardíaco. Isso permite avaliar o fluxo sanguíneo quando o coração está sob demanda aumentada. Esse exame é particularmente útil para diagnosticar doenças coronarianas, identificar áreas de isquemia, avaliar a extensão de um infarto anterior e determinar a função global do coração.\n",
+   "title": "Cintilografia Miocárdica em Goiânia | Valores Acessíveis | Agendamento na Rede Particular",
+   "meta_tag_description": "Agende uma Cintilografia Miocárdica em Goiânia a preços acessíveis na rede particular. Avalie o fluxo sanguíneo para o coração e detecte possíveis obstruções nas artérias coronárias.",
+   "url": "agendar-cintilografia-goiania",
   },
   {
-    title: 'Consulta cardiologico',
-    locale: 'São Paulo',
-    price: 140
-  },
-  {
-    title: 'Exame Cardiologico',
-    locale: 'Campinas',
-    price: 90
-  },
-  {
-    title: 'Consulta cardiologico',
-    locale: 'Campinas',
-    price: 120
-  },
-  {
-    title: 'Consulta oftalmologico',
-    locale: 'Campinas',
-    price: 80
-  },
-  {
-    title: 'Consulta cardiologico',
-    locale: 'São Paulo',
-    price: 140
-  },
-]
+   "type": "cardiologicos",
+   "name": "Angiografia coronariana",
+   "description1": "Agendar Angiografia coronariana em Goiânia",
+   "description2": "Realize uma Angiografia Coronariana em Goiânia na rede particular com valores acessíveis. Obtenha i",
+   "description3": "A Angiografia Coronariana é um procedimento invasivo que permite visualizar as artérias coronárias, que são responsáveis por fornecer sangue ao coração. Durante o exame, um cateter é inserido em uma artéria, geralmente na região da virilha, e é cuidadosamente guiado até o coração sob orientação de imagens radiológicas em tempo real.\n\nApós a inserção do cateter, um contraste especial é injetado nas artérias coronárias. Esse contraste realça as estruturas das artérias, permitindo que o médico visualize com clareza possíveis obstruções, estreitamentos, placas de aterosclerose ou outras anormalidades.\n\nA Angiografia Coronariana é geralmente realizada em ambiente hospitalar, com o paciente sob sedação ou anestesia local. Durante o procedimento, o paciente é monitorado de perto, e o médico registra a pressão sanguínea, os ritmos cardíacos e outras informações importantes.\n\nEsse exame é fundamental para o diagnóstico e o tratamento de doenças cardíacas, como a doença arterial coronariana, estenoses nas artérias coronárias, avaliação pré e pós-operatória, além de ser uma importante ferramenta para guiar procedimentos de intervenção, como a angioplastia coronariana com implante de stent.\n\nA Angiografia Coronariana é um procedimento seguro, mas é considerado invasivo e possui alguns riscos associados, como reações alérgicas ao contraste e complicações vasculares. No entanto, os benefícios diagnósticos e terapêuticos geralmente superam esses riscos.",
+   "title": "Angiografia Coronariana em Goiânia | Valores Acessíveis | Agendamento na Rede Particular",
+   "meta_tag_description": "Realize uma Angiografia Coronariana em Goiânia na rede particular com valores acessíveis. ",
+   "url": "agendar-angiografia-goiania",
+  }
+ ]

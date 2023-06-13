@@ -6,6 +6,7 @@ import AdsClickIcon from '@mui/icons-material/AdsClick';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import bannerImg from '../../assets/singleproduct.jpeg';
+import { data } from "../../data/data";
 
 // Styles
 import './styles.css';
@@ -25,6 +26,8 @@ export const SinglePageProduct = () => {
   const handleChange = (event: any) => {
     setName(event.target.value);
   }
+  const filteredData = id && data.filter((dat) => dat.name.toLowerCase().includes(id.toLocaleLowerCase()))
+  console.log(filteredData)
 
   return (
     <div className="container-page--product">
@@ -46,7 +49,7 @@ export const SinglePageProduct = () => {
           </div>
 
           <p>
-            Agendar um exame de ressonância magnética pode ser uma tarefa quando você está preocupado com os custos envolvidos.
+            {filteredData && filteredData[0].description1}
           </p>
 
           <Button internalLink="#agendar" />
@@ -80,12 +83,8 @@ export const SinglePageProduct = () => {
         </div>
         
         <p className={active ? "text active" : "text"}>
-          Procurar os melhores profissionais de saúde é uma tarefa 
-          complicada e demorada.<br/><br/>
-          E mesmo quando encontramos, os custos podem ser altos.<br/><br/>
-          A <span>33doctor facilita a busca pelo médico, clínica ou laboratório</span> 
-          perfeito para os cuidados com a sua saúde com 
-          <span> valores mais acessíveis.</span>
+        {filteredData && filteredData[0].description2}<br/><br/>
+        {filteredData && filteredData[0].description3}
         </p>
         {
           active ? (

@@ -7,8 +7,8 @@ import bannerImg from '../../assets/shape.png';
 export const ChangedPage = () => {
   const { id } = useParams();
 
-  const filteredData = id && data.filter((dat) => dat.title.toLowerCase().includes(id.toLocaleLowerCase()))
-  
+  const filteredData = id && data.filter((dat) => dat.type.toLowerCase().includes(id.toLocaleLowerCase()))
+
   return (
     <div className="changed-page--container">
       <div className="banner">
